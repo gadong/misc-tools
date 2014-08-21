@@ -1,0 +1,14 @@
+ 11  git init 
+ 12  git add README
+ 13  git commit -m "first commit"
+ 14  git config --global user.email imyevv@gmail.com
+ 15  git config --global user.name gadong
+ 16  git commit -m "first commit"
+ 17  git show
+ 
+ 18  git remote add origin https://github.com/gadong/misc-tools.git
+ 19  git push -u origin master
+ 
+ 20  man git remote
+ 21  git show
+ 22  history
