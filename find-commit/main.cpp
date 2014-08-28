@@ -6,7 +6,13 @@
 #include <cstdio>
 #include <list>
 
+#include <unistd.h>
+#include <getopt.h>
+
 using namespace std;
+
+static bool gDebugEnable = false;
+#define debug_print if(gDebugEnable)printf
 
 struct Commit{
 	enum commit_type{
@@ -23,14 +29,16 @@ struct Commit{
 	bool mTitleSet;
 
 	Commit(){
+		mType = 0;
+		mTitleSet = false;
 	}
 
 	char * getTypename() const{
 		static char name[8];
 		memset(name, 0, 8);
 		if(mType & Merge) strcat(name, "M ");
-		if(mType & Revert) strcat(name, "R  ");
-		if(mType & CherryPick) strcat(name, "C ");
+		if(mType & Revert) strcat(name, "R ");
+		if(mType & CherryPick) strcat(name, "C");
 
 		if(mType == 0)strcat(name, "N");	//nomral
 
@@ -49,10 +57,11 @@ struct Commit{
 
 		mBody.push_back(sBody);
 	}
+
+	void dump(){
+		printf("\t%-.8s\t%-64.64s\t%s\r\n", mSha1.c_str(), mTitle.c_str(), getTypename());
+	}
 };
-
-
-#define debug_print(...)
 
 class GitLogParser{
 
@@ -102,13 +111,17 @@ class GitLogParser{
 			}
 		}
 
-		for (list<string>::const_iterator it =(pCommit->mBody).begin(); it!=(pCommit->mBody).end(); it++){
-			string::size_type found = (*it).find(mInterestingBody);
-			if(found != string::npos){
-				debug_print("\tinteresting commit found: %s\r\n", (*it).c_str());
-				return true;
+		if(!mInterestingBody.empty()){
+			for (list<string>::const_iterator it =(pCommit->mBody).begin(); it!=(pCommit->mBody).end(); it++){
+				string::size_type found = (*it).find(mInterestingBody);
+				if(found != string::npos){
+					debug_print("\tinteresting commit found: %s\r\n", (*it).c_str());
+					return true;
+				}
 			}
 		}
+
+		if(mInterestingBody.empty() && mInterestingAuthor.empty())return true;
 
 		return false;
 	}
@@ -131,8 +144,9 @@ public:
 
 	void parse(){
 		Commit *pCommit = NULL;
+		bool loop = true;
 		
-		while(1){
+		while(loop){
 			int line_type;
 			const char *pContent = NULL;
 			char *sLine=NULL;
@@ -145,7 +159,6 @@ public:
 			shrink_tail(sLine);
 			line_type = identify_line_type(sLine, &pContent);
 			
-			debug_print("parsing line: %s, \t%s\r\n", sLine, pContent);
 			switch(line_type){
 				case commit_line:
 					if(pCommit){
@@ -160,6 +173,8 @@ public:
 					pCommit = new Commit();
 					if(pCommit){
 						pCommit->mSha1 = pContent;
+					}else{
+						loop = false;
 					}
 					break;
 				case body_line:
@@ -168,10 +183,10 @@ public:
 							pCommit->mTitle = pContent;
 							pCommit->mTitleSet = true;
 							debug_print("\ttiltle set : %s\r\n", pContent);
-						}else{
-							debug_print("\tbody found : %s\r\n", pContent);
-							pCommit->appendBody(pContent);
 						}
+
+						//debug_print("\tbody found : %s\r\n", pContent);
+						pCommit->appendBody(pContent);
 					}
 					break;
 				case author_line:
@@ -187,9 +202,9 @@ public:
 	}
 
 	void dumpToFile(){
-		debug_print("-----------------\r\n");
+		debug_print("---------------------------------------------------------\r\n");
 		for (list<Commit*>::iterator it =mCommits.begin(); it!=mCommits.end(); it++){
-			printf("\t%-.8s\t%-64.64s\t%s\r\n", (*it)->mSha1.c_str(), (*it)->mTitle.c_str(), (*it)->getTypename());
+			(*it)->dump();
 			delete (*it);
 		}
 		mCommits.clear();
@@ -198,13 +213,38 @@ public:
 
 int main(int argc, char *argv[])
 {
-	/*if(argc != 2){
-		printf("%s <Insteresting Token>\r\n", argv[0]);
-		return 0;
-	}*/
+	struct option long_options[] =
+	{
+		{"author", 1, NULL, 'a'},
+		{"body",1, NULL, 'b'},      
+		{"verbose", 0, NULL, 'v'},      
+		{0, 0, 0, 0},      
+	};
+	char* const short_options = "a:b:v";
+	int opt;
+	char *opt_arg;
 
 	GitLogParser *parser = new GitLogParser();
-	parser->setInterestingAuthor("@gmail.com");
+
+	while((opt = getopt_long (argc, argv, short_options, long_options, NULL)) != -1) {
+		switch(opt){
+			case 'a':
+				parser->setInterestingAuthor(optarg); 
+				break;
+			case 'b':
+				parser->setInterestingBody(optarg); 
+				break;
+			case 'v':
+				gDebugEnable = true;
+				break;
+			case ':':
+			case '?':
+				return 0;
+			default:
+				break;
+		}
+	}
+
 	parser->parse();
 	parser->dumpToFile();
 	delete parser;
