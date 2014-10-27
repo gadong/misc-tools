@@ -19,6 +19,7 @@ class Commit{
 	string mSha1;
 	string mTitle;
 	string mAuthor;
+	string mFeature;
 	list<string> mBody;
 	int mType;
 	bool mTitleSet;
@@ -29,6 +30,7 @@ public:
 		Merge		= 0x01, 
 		Revert		= 0x02, 
 		CherryPick	= 0x04,
+		Feature		= 0x08,
 		Normal		= 0x00,
 	};
 
@@ -38,8 +40,8 @@ public:
 	}
 
 	static int checkType(const char *sLine, int nTypeToCheck){
-		const char *tag[] = {"Merge", "Revert", "(cherry picked"};
-		int tag_type[] = {Merge, Revert, CherryPick};
+		const char *tag[] = {"Merge", "Revert", "(cherry picked", "Feature:"};
+		int tag_type[] = {Merge, Revert, CherryPick, Feature};
 		int type = Normal;
 
 		for(int i=0; i<sizeof(tag_type)/sizeof(tag_type[0]); i++){
@@ -55,7 +57,8 @@ public:
 		memset(name, 0, 8);
 		if(mType & Merge) strcat(name, "M ");
 		if(mType & Revert) strcat(name, "R ");
-		if(mType & CherryPick) strcat(name, "C");
+		if(mType & CherryPick) strcat(name, "C ");
+		if(mType & Feature) strcat(name, "F");
 
 		return name;
 	}
@@ -79,12 +82,16 @@ public:
 	}
 
 	void appendBody(const char *sBody){
-		mType |= checkType(sBody, CherryPick);
+		int nType = checkType(sBody, CherryPick | Feature);
+		mType |= nType;
+		if(nType & Feature){
+			mFeature = sBody + strlen("Feature:");
+		}
 		mBody.push_back(sBody);
 	}
 
 	void dump(){
-		printf("%-.8s\t%-80.80s\t%s\r\n", mSha1.c_str(), mTitle.c_str(), getTypename());
+		printf("%-.8s\t%-80.80s\t%-10s\t%s\r\n", mSha1.c_str(), mTitle.c_str(), mFeature.c_str(), getTypename());
 	}
 };
 
