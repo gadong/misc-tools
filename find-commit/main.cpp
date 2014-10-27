@@ -1,3 +1,10 @@
+
+/*
+	Author: 	Kevin, Ye
+	MailBox:	kraven@foxmail.com
+	Date:	26th Oct. 2014
+*/
+
 #include <string>
 #include <iostream>
 #include <fstream>
