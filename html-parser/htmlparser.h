@@ -19,7 +19,6 @@ public:
 		SingleLineTag	= 0x01U<<1, // <input .../>
 		CommentTag		= 0x01U<<2, // for comment tag, <!--...-->
 		TextTag			= 0x01U<<3, // <tag-name...>...Text...</tag-name>
-		Closed 			= 0x01U<<4, // tag had been successfully parsed
 	};
 
 	unsigned flag() const {return mFlag;}
@@ -32,8 +31,6 @@ public:
 	bool addAttribute(const HTMLChar *sName, const HTMLChar *sValue );
 	void setParent(HTMLTag * parent) {mParent = parent; updateDepth();}
 	void setText(const HTMLChar * sText);
-	void close(){mFlag |= Closed;}
-	bool tryToCloseByName(const HTMLChar * sTagName);
 
 	static HTMLTag * makeTagByName(const HTMLChar * sTagName);
 	static void releaseTag(HTMLTag * pTag){delete pTag;}
@@ -55,6 +52,7 @@ protected:
 		IDX_UL,
 		IDX_COMMENT,
 		IDX_MAX};
+
 	static const HTMLChar * sSupportedTags[];
 	static const HTMLChar * sGlobalAttributes[];
 

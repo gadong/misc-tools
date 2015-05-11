@@ -50,7 +50,6 @@ const HTMLChar* HTMLTag::sGlobalAttributes[] = {
 	NULL
 	};
 
-
 const HTMLChar* TAG_A::A_specificAttributes[] = {
 	"href", "target", NULL
 	};
@@ -82,7 +81,6 @@ const HTMLChar* TAG_META::META_specificAttributes[] = {
 	"name", "content", "http-equiv", NULL
 	};
 
-
 HTMLTag * HTMLTag::makeTagByName(const HTMLChar * sTagName){
 	int tagIdx = IDX_MAX;
 	const HTMLChar * pNameStorage = NULL; //point to the static const area
@@ -98,44 +96,37 @@ HTMLTag * HTMLTag::makeTagByName(const HTMLChar * sTagName){
 
 	HTMLTag * pTag = NULL;
 	switch(tagIdx){
-		case HTMLTag::IDX_A: pTag = new TAG_A(); break;
-		case HTMLTag::IDX_ASIDE: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_BODY: pTag = new TAG_BODY(); break;
-		case HTMLTag::IDX_DIV: pTag = new TAG_DIV(); break;
-		case HTMLTag::IDX_FIGURE: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_FOOTER: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_H1: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_H2: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_H3: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_HEAD: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_HTML: pTag = new TAG_HTML(); break;
-		case HTMLTag::IDX_IMG: pTag = new TAG_IMG(); break;
-		case HTMLTag::IDX_INPUT: pTag = new TAG_INPUT(); break;
-		case HTMLTag::IDX_LABEL: pTag = new TAG_LABEL(); break;
-		case HTMLTag::IDX_LI: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_LINK: pTag = new TAG_LINK(); break;
-		case HTMLTag::IDX_MAIN: pTag = new TAG_MAIN(); break;
-		case HTMLTag::IDX_META: pTag = new TAG_META(); break;
-		case HTMLTag::IDX_NAV: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_P: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_SMALL: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_SPAN: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_TITLE: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_UL: pTag = new HTMLTag(pNameStorage); break;
-		case HTMLTag::IDX_COMMENT: pTag = new HTMLTag(pNameStorage, CommentTag); break;
+		case IDX_A: pTag = new TAG_A(); break;
+		case IDX_ASIDE: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_BODY: pTag = new TAG_BODY(); break;
+		case IDX_DIV: pTag = new TAG_DIV(); break;
+		case IDX_FIGURE: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_FOOTER: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_H1: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_H2: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_H3: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_HEAD: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_HTML: pTag = new TAG_HTML(); break;
+		case IDX_IMG: pTag = new TAG_IMG(); break;
+		case IDX_INPUT: pTag = new TAG_INPUT(); break;
+		case IDX_LABEL: pTag = new TAG_LABEL(); break;
+		case IDX_LI: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_LINK: pTag = new TAG_LINK(); break;
+		case IDX_MAIN: pTag = new TAG_MAIN(); break;
+		case IDX_META: pTag = new TAG_META(); break;
+		case IDX_NAV: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_P: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_SMALL: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_SPAN: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_TITLE: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_UL: pTag = new HTMLTag(pNameStorage); break;
+		case IDX_COMMENT: pTag = new HTMLTag(pNameStorage, CommentTag); break;
 		default:
 			errprint("Error tag idx : %d for %s\r\n" , tagIdx, pNameStorage);
 			break;
 	}
 
 	return pTag;
-}
-
-bool HTMLTag::tryToCloseByName(const HTMLChar * sTagName){
-	if(!html_strcmp(sTagName, mName))
-		mFlag |= Closed;
-
-	return (mFlag & Closed)!=0;
 }
 
 unsigned HTMLTag::sizeOfSource()
@@ -383,7 +374,6 @@ HTMLTag * HTMLParser::probeHTMLTag(HTMLChar *sSource, HTMLChar **psSave){
 	pStart = skipBlank(pStart);
 	if(pTag->flag() & HTMLTag::SingleLineTag){
 		if(*pStart == '>' || !html_strncmp("/>", pStart, 2)){
-			pTag->close();
 			if(*pStart == '>') *psSave = pStart + 1;
 			else *psSave = pStart + 2;
 			//*psSave = pStart + (*pStart == '>')?1:2;
@@ -401,7 +391,6 @@ HTMLTag * HTMLParser::probeHTMLTag(HTMLChar *sSource, HTMLChar **psSave){
 			}else{
 				warnprint("didn't find any comment\r\n");
 			}
-			pTag->close();
 			*psSave = pTmp + 3;
 			infoprint("comment tag was succesfully closed\r\n");
 		}else{
@@ -428,7 +417,7 @@ HTMLTag * HTMLParser::probeHTMLTag(HTMLChar *sSource, HTMLChar **psSave){
 					goto err2;
 				}
 
-				if(!pTag->tryToCloseByName(pStart+2)){
+				if(html_strcmp(pStart+2, pTag->name())){
 					errprint("closing-tag not match\r\n");
 					goto err2;
 				}else{
