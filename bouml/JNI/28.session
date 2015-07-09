@@ -1,0 +1,11 @@
+window_sizes 1350 840 337 1007 636 130
+diagrams
+  active  sequencediagram_ref 128028 // startJavaClient
+    1007 636 100 3 0 35
+end
+show_stereotypes
+selected class_ref 128924 // MediaPlayer
+open
+  classview_ref 128156 // JNI View
+end
+end

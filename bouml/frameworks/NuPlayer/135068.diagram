@@ -1,0 +1,39 @@
+format 74
+
+statecanvas 128028 state_ref 128284 // UninitializedState
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  xyzwh 317 113 2000 119 37
+end
+statecanvas 128156 state_ref 128412 // LoadedState
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  xyzwh 131 322 2000 93 37
+end
+statecanvas 128284 state_ref 128540 // LoadedToIdleState
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  xyzwh 347 348 2000 127 37
+end
+statecanvas 128412 state_ref 128668 // IdleToExecutingState
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  xyzwh 558 282 2000 141 37
+end
+statecanvas 128540 state_ref 128796 // ExecutingState
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  xyzwh 109 198 2005 107 37
+end
+statecanvas 128668 state_ref 128924 // OutputPortSettingsChangedState
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  xyzwh 209 472 2000 211 37
+end
+statecanvas 128796 state_ref 129052 // ExecutingToIdleState
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  xyzwh 578 476 2000 141 37
+end
+statecanvas 128924 state_ref 129180 // IdleToLoadedState
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  xyzwh 564 188 2005 127 37
+end
+statecanvas 129052 state_ref 129308 // FlushingState
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  xyzwh 437 585 2000 99 37
+end
+end

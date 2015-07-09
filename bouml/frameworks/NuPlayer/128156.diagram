@@ -1,0 +1,235 @@
+format 74
+
+classinstance 128028 class_ref 128028 // MediaApp
+  name ""   xyz 7.82662 4.33714 2000 life_line_z 2000
+classinstance 128156 class_ref 128156 // MediaPlayer
+  name ""   xyz 85.464 4.33714 2000 life_line_z 2000
+classinstance 128284 class_ref 128284 // MPS::Client
+  name ""   xyz 177.582 4.55003 2000 life_line_z 2000
+classinstance 128412 class_ref 128412 // MPS::AudioOuptput
+  name ""   xyz 263.956 4.33714 2000 life_line_z 2000
+classinstance 128540 class_ref 128540 // NuPlayerDriver
+  name ""   xyz 394.034 4.33714 2000 life_line_z 2000
+classinstance 128668 class_ref 128668 // NuPlayer
+  name ""   xyz 499.896 4.33714 2000 life_line_z 2000
+classinstance 128796 class_ref 129052 // GenericSource
+  name ""   xyz 574.915 4.33714 2000 life_line_z 2000
+classinstance 128924 class_ref 128796 // NuPlayer::Render
+  name ""   xyz 675.452 4.33714 2000 life_line_z 2000
+classinstance 129052 class_ref 128924 // NuPlayer::Decoder
+  name ""   xyz 793.449 3.9 2000 life_line_z 2000
+note 135708 "DataSource would be created here. FileSource"
+  xyzwh 304.6 171.1 2005 300 33
+note 136220 "initFromDataSource()
+1, create MediaExtractor according to the metadata from DataSource
+2, get AudioTrack, VideoTrack accordingly"
+  xyzwh 201.3 218.55 2005 405 73
+durationcanvas 129180 classinstance_ref 128028 // :MediaApp
+  color mediumgreen
+  xyzwh 37 57.7 2010 11 594
+end
+durationcanvas 129308 classinstance_ref 128156 // :MediaPlayer
+  color mediumgreen
+  xyzwh 121 62.65 2010 11 183
+end
+durationcanvas 133404 classinstance_ref 128284 // :MPS::Client
+  color mediumyellow
+  xyzwh 211 73 2010 11 56
+end
+durationcanvas 133660 classinstance_ref 128540 // :NuPlayerDriver
+  color mediumyellow
+  xyzwh 438 81.1 2010 11 43
+end
+durationcanvas 136348 classinstance_ref 128156 // :MediaPlayer
+  color mediumgreen
+  xyzwh 121 314.35 2010 11 107
+end
+durationcanvas 136604 classinstance_ref 128284 // :MPS::Client
+  color mediumyellow
+  xyzwh 211 330.45 2010 11 80
+end
+durationcanvas 136860 classinstance_ref 128540 // :NuPlayerDriver
+  color mediumyellow
+  xyzwh 438 354.9 2010 11 49
+end
+durationcanvas 137116 classinstance_ref 128668 // :NuPlayer
+  color mediumyellow
+  xyzwh 526 371.5 2010 11 238
+  overlappingdurationcanvas 140828
+    color red
+    xyzwh 532 395.95 2020 11 208
+    overlappingdurationcanvas 141340
+      color red
+      xyzwh 538 453.2 2030 11 144
+      overlappingdurationcanvas 141852
+	color red
+	xyzwh 544 488.9 2040 11 101
+      end
+    end
+  end
+end
+durationcanvas 137372 classinstance_ref 128668 // :NuPlayer
+  color gold
+  xyzwh 526 93.4 2010 11 72
+  overlappingdurationcanvas 137628
+    color red
+    xyzwh 532 107.45 2020 11 46
+  end
+end
+durationcanvas 139292 classinstance_ref 128796 // :GenericSource
+  color red
+  xyzwh 617 135.7 2010 11 118
+  overlappingdurationcanvas 139548
+    color darkblue
+    xyzwh 623 148.7 2020 11 92
+    overlappingdurationcanvas 139804
+      color darkblue
+      xyzwh 629 169.95 2030 11 61
+      overlappingdurationcanvas 140060
+	color darkblue
+	xyzwh 635 189.05 2040 11 25
+      end
+    end
+  end
+end
+durationcanvas 141084 classinstance_ref 128924 // :NuPlayer::Render
+  color red
+  xyzwh 726 417.5 2010 11 26
+end
+durationcanvas 142108 classinstance_ref 129052 // :NuPlayer::Decoder
+  color red
+  xyzwh 847 501.7 2010 11 26
+end
+durationcanvas 142364 classinstance_ref 129052 // :NuPlayer::Decoder
+  color red
+  xyzwh 847 535.35 2010 11 25
+end
+durationcanvas 142620 classinstance_ref 129052 // :NuPlayer::Decoder
+  color red
+  xyzwh 847 565.95 2010 11 28
+end
+msg 129436 synchronous
+  from durationcanvas_ref 129180
+  to durationcanvas_ref 129308
+  yz 69 2015 explicitmsg "prepare()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 52 54
+msg 133532 asynchronous
+  from durationcanvas_ref 129308
+  to durationcanvas_ref 133404
+  yz 72 2015 explicitmsg "prepareAsync()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 126 55
+msg 133788 synchronous
+  from durationcanvas_ref 133404
+  to durationcanvas_ref 133660
+  yz 85 2020 explicitmsg "prepareAsync()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 286 69
+msg 136476 synchronous
+  from durationcanvas_ref 129180
+  to durationcanvas_ref 136348
+  yz 321 2015 explicitmsg "start()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 54 305
+msg 136732 asynchronous
+  from durationcanvas_ref 136348
+  to durationcanvas_ref 136604
+  yz 343 2020 explicitmsg "start()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 143 326
+msg 136988 synchronous
+  from durationcanvas_ref 136604
+  to durationcanvas_ref 136860
+  yz 357 2025 explicitmsg "start()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 301 341
+msg 137244 synchronous
+  from durationcanvas_ref 136860
+  to durationcanvas_ref 137116
+  yz 371 2015 explicitmsg "start()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 460 355
+msg 137500 synchronous
+  from durationcanvas_ref 133660
+  to durationcanvas_ref 137372
+  yz 92 2015 explicitmsg "prepareAsync()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 449 76
+reflexivemsg 137756 asynchronous
+  to durationcanvas_ref 137628
+  yz 108 2025 explicitmsg "kWhatPrepare"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 544 88
+msg 137884 return
+  from durationcanvas_ref 137372
+  to durationcanvas_ref 133660
+  yz 105 2025 unspecifiedmsg
+  show_full_operations_definition default drawing_language default show_context_mode default
+msg 139420 synchronous
+  from durationcanvas_ref 137628
+  to durationcanvas_ref 139292
+  yz 140 2025 explicitmsg "prepareAsync()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 547 125
+reflexivemsg 139676 asynchronous
+  to durationcanvas_ref 139548
+  yz 149 3005 explicitmsg "kWhatPrepareAsync"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 638 133
+reflexivemsg 139932 synchronous
+  to durationcanvas_ref 139804
+  yz 169 2035 explicitmsg "onPrepareAsync()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 658 157
+reflexivemsg 140188 synchronous
+  to durationcanvas_ref 140060
+  yz 189 2045 explicitmsg "initFromDataSource()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 673 184
+reflexivemsg 140956 asynchronous
+  to durationcanvas_ref 140828
+  yz 396 2025 explicitmsg "kWhatStart"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 545 381
+msg 141212 synchronous
+  from durationcanvas_ref 140828
+  to durationcanvas_ref 141084
+  yz 419 2030 explicitmsg "<<create>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 591 402
+reflexivemsg 141468 asynchronous
+  to durationcanvas_ref 141340
+  yz 454 2035 explicitmsg "kWhatScanSources"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 551 435
+reflexivemsg 141980 synchronous
+  to durationcanvas_ref 141852
+  yz 488 2045 explicitmsg "instantiateDecoder()//Audio"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 555 473
+msg 142236 synchronous
+  from durationcanvas_ref 141852
+  to durationcanvas_ref 142108
+  yz 505 2050 explicitmsg "<<create>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 656 488
+msg 142492 synchronous
+  from durationcanvas_ref 141852
+  to durationcanvas_ref 142364
+  yz 535 2055 explicitmsg "init()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 678 519
+msg 142748 synchronous
+  from durationcanvas_ref 141852
+  to durationcanvas_ref 142620
+  yz 565 2060 explicitmsg "configure()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 660 549
+msg 143004 return
+  from durationcanvas_ref 137116
+  to durationcanvas_ref 136860
+  yz 392 2025 unspecifiedmsg
+  show_full_operations_definition default drawing_language default show_context_mode default
+preferred_whz 1104 632 1.05
+end

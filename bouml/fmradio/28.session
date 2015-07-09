@@ -1,0 +1,13 @@
+window_sizes 1350 840 290 1054 766 0
+diagrams
+  active  classdiagram_ref 134556 // Struct
+    1054 766 100 3 0 0
+end
+show_stereotypes
+selected classdiagram_ref 134556 // Struct
+open
+  classview_ref 134556 // com.sonyericsson.fmradio.service
+  classview_ref 141084 // android.content
+  classview_ref 141212 // android.media
+end
+end

@@ -1,0 +1,139 @@
+format 74
+
+classinstance 128028 class_ref 128028 // zygote
+  name ""   xyz 83 4 2000 life_line_z 2000
+classinstance 128156 class_ref 128028 // zygote
+  name ""   xyz 189 4 2000 life_line_z 2000
+classinstance 128284 class_ref 128156 // JavaVM
+  name ""   xyz 387 4 2000 life_line_z 2000
+classinstance 128412 class_ref 128284 // JNIEnv
+  name ""   xyz 491 4 2000 life_line_z 2000
+classinstance 128540 class_ref 128412 // JavaClient
+  name ""   xyz 695 4 2000 life_line_z 2000
+classinstance 128668 class_ref 128540 // libmedia_jni
+  name ""   xyz 910 4 2000 life_line_z 2000
+classinstance 129436 class_ref 128668 // AndroidRuntime
+  name ""   xyz 266 4 2000 life_line_z 2000
+classinstance 131484 class_ref 128796 // System
+  name ""   xyz 596 4 2000 life_line_z 2000
+note 132892 "1) How would VM be started up?
+2) How would Java Program be launched?
+3) How would JNI funcs be registered?"
+  xyzwh 572 121 2000 263 69
+classinstance 133020 class_ref 128924 // MediaPlayer
+  name ""   xyz 798 4 2000 life_line_z 2000
+durationcanvas 128796 classinstance_ref 128028 // :zygote
+  color magenta
+  xyzwh 103 75 2010 11 40
+end
+durationcanvas 128924 classinstance_ref 128156 // :zygote
+  color mediumyellow
+  xyzwh 209 85 2010 11 425
+end
+durationcanvas 129564 classinstance_ref 129436 // :AndroidRuntime
+  color mediumyellow
+  xyzwh 312 99 2010 11 392
+end
+durationcanvas 129820 classinstance_ref 128284 // :JavaVM
+  color mediumyellow
+  xyzwh 411 108 2010 11 31
+end
+durationcanvas 130460 classinstance_ref 128412 // :JNIEnv
+  color mediumyellow
+  xyzwh 512 150 2010 11 36
+end
+durationcanvas 130972 classinstance_ref 128412 // :JNIEnv
+  color mediumyellow
+  xyzwh 512 196 2010 11 30
+end
+durationcanvas 131228 classinstance_ref 128412 // :JNIEnv
+  color mediumyellow
+  xyzwh 512 237 2010 11 242
+  overlappingdurationcanvas 133916
+    color mediumyellow
+    xyzwh 518 402 2020 11 25
+  end
+end
+durationcanvas 131612 classinstance_ref 128540 // :JavaClient
+  color mediumyellow
+  xyzwh 726 269 2010 11 198
+end
+durationcanvas 133148 classinstance_ref 133020 // :MediaPlayer
+  color mediumyellow
+  xyzwh 834 301 2010 11 145
+end
+durationcanvas 133404 classinstance_ref 131484 // :System
+  color mediumyellow
+  xyzwh 618 331 2010 11 104
+end
+durationcanvas 133660 classinstance_ref 128668 // :libmedia_jni
+  color mediumyellow
+  xyzwh 945 367 2010 11 66
+end
+msg 129052 asynchronous
+  from durationcanvas_ref 128796
+  to durationcanvas_ref 128924
+  yz 85 2015 explicitmsg "<<fork>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 136 69
+msg 129692 synchronous
+  from durationcanvas_ref 128924
+  to durationcanvas_ref 129564
+  yz 101 2020 explicitmsg "start()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 240 85
+msg 129948 synchronous
+  from durationcanvas_ref 129564
+  to durationcanvas_ref 129820
+  yz 109 2015 explicitmsg "<<create>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 335 93
+msg 130588 synchronous
+  from durationcanvas_ref 129564
+  to durationcanvas_ref 130460
+  yz 151 2015 explicitmsg "<<create>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 385 135
+msg 131100 synchronous
+  from durationcanvas_ref 129564
+  to durationcanvas_ref 130972
+  yz 196 2015 explicitmsg "GetStaticMethodID(\"main\")"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 343 180
+msg 131356 synchronous
+  from durationcanvas_ref 129564
+  to durationcanvas_ref 131228
+  yz 237 2015 explicitmsg "CallStaticVoidMethod()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 353 221
+msg 131740 synchronous
+  from durationcanvas_ref 131228
+  to durationcanvas_ref 131612
+  yz 269 2015 explicitmsg "main()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 605 253
+msg 133276 synchronous
+  from durationcanvas_ref 131612
+  to durationcanvas_ref 133148
+  yz 301 2015 explicitmsg "<<create>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 754 285
+msg 133532 synchronous
+  from durationcanvas_ref 133148
+  to durationcanvas_ref 133404
+  yz 336 2015 explicitmsg "loadLibrary(\"media_jni\")"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 695 320
+msg 133788 synchronous
+  from durationcanvas_ref 133404
+  to durationcanvas_ref 133660
+  yz 368 2015 explicitmsg "JNI_OnLoad()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 747 352
+msg 134044 synchronous
+  from durationcanvas_ref 133660
+  to durationcanvas_ref 133916
+  yz 403 2025 explicitmsg "RegisterNatives()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 688 387
+end
