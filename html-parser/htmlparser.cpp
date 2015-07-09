@@ -486,12 +486,14 @@ bool HTMLParser::saveAs(const char * toFile){
 	if(of){
 		unsigned size;
 		HTMLChar * pStart;
-		 for (list<HTMLTag *>::iterator it=mTopLevelTags.begin(); it != mTopLevelTags.end(); ++it){
-			 pStart = (*it)->toSource(NULL, size);
-			 of.write(pStart, size);
-		 }
+		const HTMLChar * sDocType = "<!DOCTYPE html>\r\n";
+		of.write(sDocType, html_strlen(sDocType));
+		for (list<HTMLTag *>::iterator it=mTopLevelTags.begin(); it != mTopLevelTags.end(); ++it){
+			pStart = (*it)->toSource(NULL, size);
+			of.write(pStart, size);
+		}
 
-		 of.close();
+		of.close();
 	}
 
 	return true;
