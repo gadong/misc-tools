@@ -1,5 +1,11 @@
 window_sizes 1350 840 337 1007 636 130
+diagrams
+  active  sequencediagram_ref 128412 // mtp-init
+    1007 636 100 3 0 0
+end
 show_stereotypes
-selected 
-  package_ref 129 // mtp
+selected class_ref 128284 // MtpReceiver
+open
+  classview_ref 128028 // MediaProvider
+end
 end

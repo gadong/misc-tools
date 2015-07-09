@@ -1,0 +1,11 @@
+format 74
+
+classinstance 128028 class_ref 128156 // MtpService
+  name ""   xyz 127 4 2000 life_line_z 2000
+classinstance 128156 class_ref 128540 // MtpServer
+  name ""   xyz 230 4 2000 life_line_z 2000
+classinstance 128284 class_ref 128028 // MediaProvider
+  name ""   xyz 318 4 2000 life_line_z 2000
+classinstance 128412 class_ref 128284 // MtpReceiver
+  name ""   xyz 23 4 2000 life_line_z 2000
+end
