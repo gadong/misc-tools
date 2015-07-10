@@ -1,0 +1,11 @@
+window_sizes 1375 908 337 1032 704 130
+diagrams
+  active  sequencediagram_ref 128156 // mtp-init
+    1032 704 100 3 0 0
+end
+show_stereotypes
+selected class_ref 128796 // MediaScanner
+open
+  classview_ref 128284 // ClassView
+end
+end
