@@ -1,0 +1,22 @@
+1, ActivityThread
+	mainLooper, 
+	Handler:
+		handleMessage(){
+			switch{
+				//Activity Callback, 
+				case LAUNCH_ACTIVITY: ... //OnStart
+				case PAUSE_ACTIVITY: ...
+				case STOP_ACTIVITY_SHOW/HIDE: ...
+				case RESUME_ACTIVITY: ...
+				case DESTROY_ACTIVITY: ...
+
+				//Service 
+				case CREATE_SERVICE:
+				case BIND_SERVICE:
+				case STOP_SERVICE:
+
+				//Receiver
+				case RECEIVER:
+				
+			}
+		}
