@@ -1,0 +1,12 @@
+window_sizes 1312 918 328 984 700 86
+diagrams
+  active  classdiagram_ref 128258 // MediaCodecList
+    978 759 100 4 0 0
+end
+show_stereotypes
+selected class_ref 129282 // MediaCodecList
+open
+  classview_ref 128130 // MPS
+  classview_ref 128258 // media-codec
+end
+end
