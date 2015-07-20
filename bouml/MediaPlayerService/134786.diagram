@@ -1,0 +1,10 @@
+format 75
+
+note 128002 "Overall View
+
+1, path -> FileSource/DataSource
+2, MediaExtracter::Create(), sniff DataSource, sniffer are offered by each MediaExtracter
+3, OMXCodec::Create(), create Decoder by component name(Codec Name -> Component Name)
+4, "
+  xyzwh 12 21 2000 603 111
+end
