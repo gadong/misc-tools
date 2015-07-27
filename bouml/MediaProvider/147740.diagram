@@ -1,0 +1,58 @@
+format 74
+
+classinstance 128028 class_ref 128156 // MediaProvider
+  name ""   xyz 44 22 2000 life_line_z 2000
+classinstance 128156 class_ref 128412 // MtpService
+  name ""   xyz 162 22 2000 life_line_z 2000
+classinstance 128284 class_ref 128924 // MtpServer
+  name ""   xyz 267 22 2000 life_line_z 2000
+classinstance 128412 class_ref 135708 // MtpTransport
+  name ""   xyz 366 22 2000 life_line_z 2000
+classinstance 128540 class_ref 135836 // USB_Driver
+  name ""   xyz 484 23 2000 life_line_z 2000
+durationcanvas 128668 classinstance_ref 128028 // :MediaProvider
+  color gold
+  xyzwh 86 94 2010 11 91
+end
+durationcanvas 128796 classinstance_ref 128156 // :MtpService
+  color gold
+  xyzwh 194 91 2010 11 82
+end
+durationcanvas 129052 classinstance_ref 128284 // :MtpServer
+  color gold
+  xyzwh 297 116 2010 11 42
+end
+durationcanvas 129308 classinstance_ref 128412 // :MtpTransport
+  color gold
+  xyzwh 404 127 2010 11 28
+end
+durationcanvas 129564 classinstance_ref 128540 // :USB_Driver
+  color gold
+  xyzwh 518 144 2010 11 25
+end
+msg 128924 synchronous
+  from durationcanvas_ref 128668
+  to durationcanvas_ref 128796
+  yz 96 2015 explicitmsg "sendObjectAdded()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 91 80
+msg 129180 synchronous
+  from durationcanvas_ref 128796
+  to durationcanvas_ref 129052
+  yz 117 2020 explicitmsg "sendObjectAdded()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 197 101
+msg 129436 synchronous
+  from durationcanvas_ref 129052
+  to durationcanvas_ref 129308
+  yz 133 2015 explicitmsg "ioctl()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "MTP_SEND_EVENT"
+  label_xy 313 116
+msg 129692 synchronous
+  from durationcanvas_ref 129308
+  to durationcanvas_ref 129564
+  yz 144 2020 explicitmsg "ioctl()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 450 128
+end

@@ -1,6 +1,6 @@
 format 74
 "MediaProvider"
-  revision 3
+  revision 5
   modified_by 28 "28850979"
 
 
@@ -61,6 +61,12 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 128156 // <dependency>
+	relation 128156 -_->
+	  a default
+	    classrelation_ref 128156 // <dependency>
+	  b parent class_ref 128412 // MtpService
+      end
     end
 
     class 128284 "MtpReceiver"
@@ -72,6 +78,12 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 128028 // <dependency>
+	relation 128028 -_->
+	  a default
+	    classrelation_ref 128028 // <dependency>
+	  b parent class_ref 128412 // MtpService
+      end
     end
 
     class 128412 "MtpService"
@@ -83,6 +95,26 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 128540 // <dependency>
+	relation 128540 -_->
+	  a default
+	    classrelation_ref 128540 // <dependency>
+	  b parent class_ref 128924 // MtpServer
+      end
+
+      classrelation 128668 // <dependency>
+	relation 128668 -_->
+	  a default
+	    classrelation_ref 128668 // <dependency>
+	  b parent class_ref 129180 // MtpStorage
+      end
+
+      classrelation 128796 // <dependency>
+	relation 128796 -_->
+	  a default
+	    classrelation_ref 128796 // <dependency>
+	  b parent class_ref 129052 // MtpDatabase
+      end
     end
 
     class 128540 "MediaScannerReceiver"
@@ -94,6 +126,12 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 128284 // <dependency>
+	relation 128284 -_->
+	  a default
+	    classrelation_ref 128284 // <dependency>
+	  b parent class_ref 128668 // MediaScannerService
+      end
     end
 
     class 128668 "MediaScannerService"
@@ -105,6 +143,12 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 128412 // <dependency>
+	relation 128412 -_->
+	  a default
+	    classrelation_ref 128412 // <dependency>
+	  b parent class_ref 128796 // MediaScanner
+      end
     end
 
     class 128796 "MediaScanner"
@@ -116,6 +160,12 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 129308 // <dependency>
+	relation 129308 -_->
+	  a default
+	    classrelation_ref 129308 // <dependency>
+	  b parent class_ref 128156 // MediaProvider
+      end
     end
 
     class 128924 "MtpServer"
@@ -127,6 +177,26 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 128924 // <dependency>
+	relation 128924 -_->
+	  a default
+	    classrelation_ref 128924 // <dependency>
+	  b parent class_ref 129180 // MtpStorage
+      end
+
+      classrelation 129052 // <dependency>
+	relation 129052 -_->
+	  a default
+	    classrelation_ref 129052 // <dependency>
+	  b parent class_ref 129052 // MtpDatabase
+      end
+
+      classrelation 129564 // <dependency>
+	relation 129564 -_->
+	  a default
+	    classrelation_ref 129564 // <dependency>
+	  b parent class_ref 135708 // MtpTransport
+      end
     end
 
     class 129052 "MtpDatabase"
@@ -138,6 +208,19 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 129180 // <dependency>
+	relation 129180 -_->
+	  a default
+	    classrelation_ref 129180 // <dependency>
+	  b parent class_ref 128156 // MediaProvider
+      end
+
+      classrelation 129436 // <dependency>
+	relation 129436 -_->
+	  a default
+	    classrelation_ref 129436 // <dependency>
+	  b parent class_ref 128796 // MediaScanner
+      end
     end
 
     class 129180 "MtpStorage"
@@ -151,16 +234,6 @@ format 74
       
     end
 
-    sequencediagram 128156 "mtp-init"
-      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
-      overlapping_bars size A3
-    end
-
-    classdiagram 134684 "PC-copy-file"
-      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-      size A3
-    end
-
     class 135708 "MtpTransport"
       visibility package 
       cpp_decl ""
@@ -170,6 +243,12 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 129692 // <dependency>
+	relation 129692 -_->
+	  a default
+	    classrelation_ref 129692 // <dependency>
+	  b parent class_ref 135836 // USB_Driver
+      end
     end
 
     class 135836 "USB_Driver"
@@ -181,6 +260,26 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+    end
+
+    classdiagram 134684 "Overview"
+      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3
+    end
+
+    sequencediagram 128156 "mtp-init"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A3
+    end
+
+    sequencediagram 141212 "pc-2-phone"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A3
+    end
+
+    sequencediagram 147740 "phone-2-pc"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A4
     end
   end
 end

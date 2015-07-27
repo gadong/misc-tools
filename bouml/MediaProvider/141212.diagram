@@ -1,0 +1,139 @@
+format 74
+
+classinstance 128028 class_ref 135836 // USB_Driver
+  name ""   xyz 269.7 15.7 2000 life_line_z 2000
+classinstance 128156 class_ref 135708 // MtpTransport
+  name ""   xyz 145.4 15.7 2000 life_line_z 2000
+classinstance 128284 class_ref 128924 // MtpServer
+  name ""   xyz 37.6 15.7 2000 life_line_z 2000
+classinstance 128412 class_ref 129052 // MtpDatabase
+  name ""   xyz 375.7 17 2000 life_line_z 2000
+classinstance 130204 class_ref 128156 // MediaProvider
+  name ""   xyz 498.5 15.7 2000 life_line_z 2000
+classinstance 131356 class_ref 128796 // MediaScanner
+  name ""   xyz 613 15.7 2000 life_line_z 2000
+note 132508 "1, read request
+2, handle request
+3, send response"
+  xyzwh 385 402 2000 118 69
+durationcanvas 128540 classinstance_ref 128284 // :MtpServer
+  color darkgreen
+  xyzwh 67 71.2 2010 11 405
+  overlappingdurationcanvas 128924
+    color darkgreen
+    xyzwh 73 130.1 2020 11 278
+    overlappingdurationcanvas 129692
+      color darkgreen
+      xyzwh 79 168.8 2030 11 61
+    end
+    overlappingdurationcanvas 130588
+      color darkgreen
+      xyzwh 79 252.5 2030 11 135
+      overlappingdurationcanvas 131740
+	color darkgreen
+	xyzwh 85 282.3 2040 11 47
+      end
+    end
+  end
+end
+durationcanvas 128668 classinstance_ref 128156 // :MtpTransport
+  color darkgreen
+  xyzwh 183 72.2 2010 11 46
+end
+durationcanvas 129180 classinstance_ref 128028 // :USB_Driver
+  color darkgreen
+  xyzwh 303 91 2010 11 25
+end
+durationcanvas 129948 classinstance_ref 128412 // :MtpDatabase
+  color darkgreen
+  xyzwh 413 192.7 2010 11 42
+end
+durationcanvas 130844 classinstance_ref 128412 // :MtpDatabase
+  color darkgreen
+  xyzwh 413 338.7 2010 11 41
+end
+durationcanvas 131100 classinstance_ref 130204 // :MediaProvider
+  color darkgreen
+  xyzwh 539 204.2 2010 11 29
+end
+durationcanvas 131484 classinstance_ref 131356 // :MediaScanner
+  color darkgreen
+  xyzwh 655 349.4 2010 11 25
+end
+durationcanvas 131996 classinstance_ref 128156 // :MtpTransport
+  color darkgreen
+  xyzwh 183 420 2010 11 43
+end
+durationcanvas 132252 classinstance_ref 128028 // :USB_Driver
+  color darkgreen
+  xyzwh 302 431 2010 11 25
+end
+msg 128796 synchronous
+  from durationcanvas_ref 128540
+  to durationcanvas_ref 128668
+  yz 71 2015 explicitmsg "read()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 112 55
+reflexivemsg 129052 synchronous
+  to durationcanvas_ref 128924
+  yz 129 2025 explicitmsg "handleRequest()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 86 113
+msg 129308 synchronous
+  from durationcanvas_ref 128668
+  to durationcanvas_ref 129180
+  yz 91 2015 explicitmsg "read()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 231 75
+reflexivemsg 129820 synchronous
+  to durationcanvas_ref 129692
+  yz 167 2035 explicitmsg "doSendObjectPropList()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 90 152
+msg 130076 synchronous
+  from durationcanvas_ref 129692
+  to durationcanvas_ref 129948
+  yz 193 2040 explicitmsg "beginSendObject()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 199 177
+reflexivemsg 130716 synchronous
+  to durationcanvas_ref 130588
+  yz 251 2035 explicitmsg "doSendObject()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 90 235
+msg 130972 synchronous
+  from durationcanvas_ref 130588
+  to durationcanvas_ref 130844
+  yz 338 2035 explicitmsg "endSendObject()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 204 321
+msg 131228 synchronous
+  from durationcanvas_ref 129948
+  to durationcanvas_ref 131100
+  yz 205 2015 explicitmsg "insert()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 462 189
+msg 131612 synchronous
+  from durationcanvas_ref 130844
+  to durationcanvas_ref 131484
+  yz 348 2040 explicitmsg "scanMtpFile()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 502 332
+reflexivemsg 131868 synchronous
+  to durationcanvas_ref 131740
+  yz 282 2045 explicitmsg "create_write_close_file()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 99 268
+msg 132124 synchronous
+  from durationcanvas_ref 128540
+  to durationcanvas_ref 131996
+  yz 419 2015 explicitmsg "write()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 112 405
+msg 132380 synchronous
+  from durationcanvas_ref 131996
+  to durationcanvas_ref 132252
+  yz 431 2015 explicitmsg "write()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 230 416
+end
