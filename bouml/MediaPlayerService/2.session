@@ -1,8 +1,0 @@
-window_sizes 1312 918 328 984 700 86
-show_stereotypes
-selected classdiagram_ref 128258 // MediaCodecList
-open
-  classview_ref 128130 // MPS
-  classview_ref 128258 // media-codec
-end
-end
