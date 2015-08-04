@@ -1,0 +1,12 @@
+format 74
+
+note 128028 "AudioTrackThread
+
+cbf is not NULL, then create the AudioTrackThread
+1) Pull Data from Creater(MOREDATA)
+2) Notify Event (EOS...)
+3) write data to sink(IAudioTrack)
+
+Thread Name: AudioTrack"
+  xyzwh 19 30 2000 305 157
+end

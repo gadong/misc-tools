@@ -1,0 +1,15 @@
+window_sizes 1350 840 337 1007 646 120
+diagrams
+  classdiagram_ref 128028 // MixerThread
+    805 516 100 3 0 0
+  active  classdiagram_ref 134556 // AudioTrack
+    1007 646 100 4 0 0
+end
+show_stereotypes
+selected classdiagram_ref 134556 // AudioTrack
+open
+  classview_ref 128028 // audioflinger
+  classview_ref 128156 // media
+  classview_ref 128284 // system-core
+end
+end
