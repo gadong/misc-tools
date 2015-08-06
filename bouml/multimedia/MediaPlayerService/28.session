@@ -11,12 +11,11 @@ diagrams
   classdiagram_ref 141724 // Org: Data Stream
     843 612 100 3 0 0
   active  classdiagram_ref 148252 // Description
-    1050 767 100 3 0 0
+    1054 767 100 3 0 0
 end
 show_stereotypes
 selected classview_ref 141596 // media
 open
-  classview_ref 134556 // NuPlayer
   class_ref 143644 // SoftOMXComponent
 end
 end
