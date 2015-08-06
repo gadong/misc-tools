@@ -1,6 +1,6 @@
 format 74
 "NuPlayer"
-  revision 7
+  revision 9
   modified_by 28 "28850979"
 
 
@@ -36,7 +36,7 @@ format 74
 
   mark_for_import
   
-  classview 128028 "ClassView"
+  classview 128028 "Inside"
     //class diagram settings
     draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
     //collaboration diagram settings
@@ -69,7 +69,12 @@ format 74
 
     classdiagram 128284 "Org: NuPlayer"
       draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-      size A4
+      size A3
+    end
+
+    classdiagram 141724 "Org: Data Stream"
+      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3
     end
 
     class 128028 "MediaApp"
@@ -142,6 +147,10 @@ format 74
 	    classrelation_ref 129180 // <association>
 	  b role_name "" private
 	    classrelation_ref 129308 // <association>
+      end
+
+      classrelation 139292 // <association>
+	relation_ref 137244 // <association>
       end
     end
 
@@ -224,6 +233,18 @@ format 74
       classrelation 128156 // <composition>
 	relation_ref 128028 // <composition>
       end
+
+      classrelation 139036 // <association>
+	relation_ref 137116 // <association>
+      end
+
+      classrelation 139164 // <association>
+	relation 137244 ----
+	  a role_name "" private
+	    classrelation_ref 139164 // <association>
+	  b role_name "" private
+	    classrelation_ref 139292 // <association>
+      end
     end
 
     class 128924 "NuPlayer::Decoder"
@@ -237,6 +258,30 @@ format 74
       
       classrelation 128412 // <composition>
 	relation_ref 128156 // <composition>
+      end
+
+      classrelation 136348 // <composition>
+	relation 135452 *---
+	  a role_name "" private
+	    classrelation_ref 136348 // <composition>
+	  b role_name "" private
+	    classrelation_ref 136476 // <composition>
+      end
+
+      classrelation 138652 // <association>
+	relation 136988 ----
+	  a role_name "" private
+	    classrelation_ref 138652 // <association>
+	  b role_name "" private
+	    classrelation_ref 138780 // <association>
+      end
+
+      classrelation 138908 // <association>
+	relation 137116 ----
+	  a role_name "" private
+	    classrelation_ref 138908 // <association>
+	  b role_name "" private
+	    classrelation_ref 139036 // <association>
       end
     end
 
@@ -252,6 +297,34 @@ format 74
       classrelation 128668 // <composition>
 	relation_ref 128284 // <composition>
       end
+
+      classrelation 137884 // <association>
+	relation 136604 ----
+	  a role_name "" private
+	    classrelation_ref 137884 // <association>
+	  b role_name "" private
+	    classrelation_ref 138012 // <association>
+      end
+
+      classrelation 138140 // <association>
+	relation 136732 ----
+	  a role_name "" private
+	    classrelation_ref 138140 // <association>
+	  b role_name "" private
+	    classrelation_ref 138268 // <association>
+      end
+
+      classrelation 138396 // <association>
+	relation 136860 ----
+	  a role_name "" private
+	    classrelation_ref 138396 // <association>
+	  b role_name "" private
+	    classrelation_ref 138524 // <association>
+      end
+
+      classrelation 138780 // <association>
+	relation_ref 136988 // <association>
+      end
     end
 
     class 129180 "MediaCodec"
@@ -263,6 +336,9 @@ format 74
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 136476 // <composition>
+	relation_ref 135452 // <composition>
+      end
     end
 
     class 129308 "ACodec"
@@ -434,6 +510,147 @@ format 74
     end
 
     class 143644 "SoftOMXComponent"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 150172 "DataSource"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 137756 // <association>
+	relation_ref 136476 // <association>
+      end
+    end
+
+    class 150300 "FileSource"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 136732 // <generalisation>
+	relation 135708 ---|>
+	  a public
+	    classrelation_ref 136732 // <generalisation>
+	  b parent class_ref 150172 // DataSource
+      end
+    end
+
+    class 150428 "MediaSource"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 150556 "MediaExtractor"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 150684 "Mp3Extractor"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 136860 // <generalisation>
+	relation 135836 ---|>
+	  a public
+	    classrelation_ref 136860 // <generalisation>
+	  b parent class_ref 150556 // MediaExtractor
+      end
+
+      classrelation 137372 // <association>
+	relation 136348 ----
+	  a role_name "" private
+	    classrelation_ref 137372 // <association>
+	  b role_name "" private
+	    classrelation_ref 137500 // <association>
+      end
+
+      classrelation 137628 // <association>
+	relation 136476 ----
+	  a role_name "" private
+	    classrelation_ref 137628 // <association>
+	  b role_name "" private
+	    classrelation_ref 137756 // <association>
+      end
+
+      classrelation 138012 // <association>
+	relation_ref 136604 // <association>
+      end
+    end
+
+    class 150812 "Mp3Source"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 136988 // <generalisation>
+	relation 135964 ---|>
+	  a public
+	    classrelation_ref 136988 // <generalisation>
+	  b parent class_ref 150428 // MediaSource
+      end
+
+      classrelation 137500 // <association>
+	relation_ref 136348 // <association>
+      end
+
+      classrelation 138268 // <association>
+	relation_ref 136732 // <association>
+      end
+
+      classrelation 138524 // <association>
+	relation_ref 136860 // <association>
+      end
+    end
+
+    class 150940 "NativeWindowWrapper"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 151068 "Surface"
       visibility package 
       cpp_decl ""
       java_decl ""

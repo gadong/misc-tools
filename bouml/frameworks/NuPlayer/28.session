@@ -1,19 +1,21 @@
 window_sizes 1350 840 290 1054 766 0
 diagrams
-  active  sequencediagram_ref 128028 // Seq: setDataSource
+  sequencediagram_ref 128028 // Seq: setDataSource
     1054 766 105 3 0 0
   sequencediagram_ref 128156 // Seq: prepare & start
     1104 632 105 3 0 0
-  classdiagram_ref 128284 // Org: NuPlayer
-    883 612 100 4 0 0
-  statediagram_ref 135068 // Machine: ACodec
-    883 612 100 3 0 0
+  active  classdiagram_ref 128284 // Org: NuPlayer
+    1054 766 100 3 0 0
   sequencediagram_ref 135196 // Seq: NuPlayer::instantiateDecoder
     1054 766 90 3 0 0
+  classdiagram_ref 141724 // Org: Data Stream
+    843 612 100 3 0 0
 end
 show_stereotypes
-selected sequencediagram_ref 128028 // Seq: setDataSource
+selected class_ref 151068 // Surface
 open
-  class_ref 136604 // OMXNodeInstance
+  class_ref 128028 // MediaApp
+  class_ref 143644 // SoftOMXComponent
+  class_ref 150172 // DataSource
 end
 end

@@ -1,0 +1,22 @@
+format 74
+
+activityobjectcanvas 128028 activityobject_ref 128028 // activity object Media File
+  show_infonote default drawing_language default show_stereotype_properties default
+  xyzwh 206 61 2000 77 33
+end
+activityactioncanvas 128156 activityaction_ref 128028 // activity action DataSource::sniff()
+  show_infonote default drawing_language default show_stereotype_properties default
+  show_opaque_action_definition default
+  xyzwh 164 143 2000 163 54
+end
+note 128412 "1, MediaFile Path -> File Descriptor
+2, File Descripter -> FileSource(DataSource)
+3, (DataSource) -> Mp3Extractor(MediaExtractor)
+4, Mp3Extracor -> Mp3Source(MediaSource)"
+  xyzwh 493 230 2000 407 137
+flowcanvas 128284 flow_ref 128028 // <flow>
+  
+  from ref 128028 z 2001 to ref 128156
+  show_infonote default drawing_language default show_stereotype_properties default write_horizontally default
+end
+end
