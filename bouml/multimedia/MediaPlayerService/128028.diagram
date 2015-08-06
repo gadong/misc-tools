@@ -1,69 +1,69 @@
-format 74
+format 75
 
 classinstance 128028 class_ref 128028 // MediaApp
-  name ""   xyz 7.70358 3.85876 2000 life_line_z 2000
+  name ""   xyz 7.80358 4.7 2000 life_line_z 2000
 classinstance 128156 class_ref 128156 // MediaPlayer
-  name ""   xyz 84.0907 3.85876 2000 life_line_z 2000
+  name ""   xyz 84.4907 4.7 2000 life_line_z 2000
 classinstance 128284 class_ref 128284 // MPS::Client
-  name ""   xyz 179.901 4.92586 2000 life_line_z 2000
+  name ""   xyz 177.701 4.62586 2000 life_line_z 2000
 classinstance 128412 class_ref 128412 // MPS::AudioOuptput
-  name ""   xyz 264.53 2.85876 2000 life_line_z 2000
+  name ""   xyz 261.93 4.7 2000 life_line_z 2000
 classinstance 128540 class_ref 128540 // NuPlayerDriver
-  name ""   xyz 394.451 3.85876 2000 life_line_z 2000
+  name ""   xyz 394.651 4.7 2000 life_line_z 2000
 classinstance 128668 class_ref 128668 // NuPlayer
-  name ""   xyz 500.338 3.85876 2000 life_line_z 2000
+  name ""   xyz 499.538 4.7 2000 life_line_z 2000
 classinstance 128796 class_ref 129052 // GenericSource
-  name ""   xyz 574.236 3.85876 2000 life_line_z 2000
+  name ""   xyz 574.436 4.7 2000 life_line_z 2000
 classinstance 128924 class_ref 128796 // NuPlayer::Render
-  name ""   xyz 675.836 2.71503 2000 life_line_z 2000
+  name ""   xyz 674.886 4.7 2000 life_line_z 2000
 classinstance 129052 class_ref 128924 // NuPlayer::Decoder
-  name ""   xyz 794.193 5.19438 2000 life_line_z 2000
+  name ""   xyz 793.393 5.99438 2000 life_line_z 2000
 durationcanvas 129180 classinstance_ref 128028 // :MediaApp
   color mediumgreen
-  xyzwh 37 56.6 2010 11 461
+  xyzwh 36 56.6 2010 11 461
 end
 durationcanvas 129308 classinstance_ref 128156 // :MediaPlayer
   color mediumgreen
-  xyzwh 120 57.9 2010 11 25
+  xyzwh 119 57.9 2010 11 25
 end
 durationcanvas 129564 classinstance_ref 128156 // :MediaPlayer
   color mediumgreen
-  xyzwh 120 89.4 2010 11 412
+  xyzwh 119 89.4 2010 11 412
 end
 durationcanvas 129820 classinstance_ref 128284 // :MPS::Client
   color mediumyellow
-  xyzwh 213 89.6 2010 11 34
+  xyzwh 212 88.5 2010 11 34
 end
 durationcanvas 130332 classinstance_ref 128284 // :MPS::Client
   color mediumyellow
-  xyzwh 213 144.4 2010 11 341
+  xyzwh 212 144.4 2010 11 341
 end
 durationcanvas 130588 classinstance_ref 128540 // :NuPlayerDriver
   color mediumyellow
-  xyzwh 438 155.9 2010 11 28
+  xyzwh 436 154.8 2010 11 28
 end
 durationcanvas 130844 classinstance_ref 128668 // :NuPlayer
   color mediumyellow
-  xyzwh 527 164.8 2010 11 29
+  xyzwh 526 164.8 2010 11 29
 end
 durationcanvas 131100 classinstance_ref 128412 // :MPS::AudioOuptput
   color mediumyellow
-  xyzwh 321 193.5 2010 11 25
+  xyzwh 318 193.5 2010 11 25
 end
 durationcanvas 131868 classinstance_ref 128540 // :NuPlayerDriver
   color mediumyellow
-  xyzwh 438 235.8 2010 11 46
+  xyzwh 436 234.7 2010 11 46
 end
 durationcanvas 132124 classinstance_ref 128540 // :NuPlayerDriver
   color mediumyellow
-  xyzwh 438 310.4 2010 11 149
+  xyzwh 436 310.4 2010 11 149
 end
 durationcanvas 132380 classinstance_ref 128668 // :NuPlayer
   color mediumyellow
-  xyzwh 527 320.1 2010 11 144
+  xyzwh 526 320.1 2010 11 144
   overlappingdurationcanvas 133148
     color red
-    xyzwh 533 415.5 2020 11 40
+    xyzwh 532 415.4 2020 11 40
   end
 end
 durationcanvas 132636 classinstance_ref 128796 // :GenericSource
@@ -76,10 +76,10 @@ durationcanvas 132892 classinstance_ref 128796 // :GenericSource
 end
 durationcanvas 133404 classinstance_ref 128668 // :NuPlayer
   color mediumyellow
-  xyzwh 527 252.2 2010 11 41
+  xyzwh 526 252.2 2010 11 41
   overlappingdurationcanvas 133660
     color red
-    xyzwh 533 263.5 2020 11 25
+    xyzwh 532 263.5 2020 11 25
   end
 end
 msg 129436 synchronous

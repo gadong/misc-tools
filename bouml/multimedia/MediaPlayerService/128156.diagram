@@ -1,63 +1,63 @@
-format 74
+format 75
 
 classinstance 128028 class_ref 128028 // MediaApp
-  name ""   xyz 7.02662 4.03714 2000 life_line_z 2000
+  name ""   xyz 7.12662 4.73714 2000 life_line_z 2000
 classinstance 128156 class_ref 128156 // MediaPlayer
-  name ""   xyz 85.064 4.03714 2000 life_line_z 2000
+  name ""   xyz 84.564 4.73714 2000 life_line_z 2000
 classinstance 128284 class_ref 128284 // MPS::Client
-  name ""   xyz 177.182 5.35003 2000 life_line_z 2000
+  name ""   xyz 174.682 5.15003 2000 life_line_z 2000
 classinstance 128412 class_ref 128412 // MPS::AudioOuptput
-  name ""   xyz 262.356 4.03714 2000 life_line_z 2000
+  name ""   xyz 259.456 4.73714 2000 life_line_z 2000
 classinstance 128540 class_ref 128540 // NuPlayerDriver
-  name ""   xyz 394.334 4.03714 2000 life_line_z 2000
+  name ""   xyz 394.534 4.73714 2000 life_line_z 2000
 classinstance 128668 class_ref 128668 // NuPlayer
-  name ""   xyz 500.096 4.03714 2000 life_line_z 2000
+  name ""   xyz 500.296 4.73714 2000 life_line_z 2000
 classinstance 128796 class_ref 129052 // GenericSource
-  name ""   xyz 574.115 4.03714 2000 life_line_z 2000
+  name ""   xyz 574.315 4.73714 2000 life_line_z 2000
 classinstance 128924 class_ref 128796 // NuPlayer::Render
-  name ""   xyz 674.502 4.03714 2000 life_line_z 2000
+  name ""   xyz 674.502 4.73714 2000 life_line_z 2000
 classinstance 129052 class_ref 128924 // NuPlayer::Decoder
-  name ""   xyz 793.649 2.65 2000 life_line_z 2000
+  name ""   xyz 793.849 4.7 2000 life_line_z 2000
 note 135708 "DataSource would be created here. FileSource"
-  xyzwh 305 171.8 2005 300 33
+  xyzwh 305.4 171.5 2005 300 33
 note 136220 "initFromDataSource()
 1, create MediaExtractor according to the metadata from DataSource
 2, get AudioTrack, VideoTrack accordingly"
-  xyzwh 201.6 218.95 2005 405 73
+  xyzwh 201.9 218.35 2005 405 73
 durationcanvas 129180 classinstance_ref 128028 // :MediaApp
   color mediumgreen
-  xyzwh 37 57.3 2010 11 594
+  xyzwh 36 57.3 2010 11 594
 end
 durationcanvas 129308 classinstance_ref 128156 // :MediaPlayer
   color mediumgreen
-  xyzwh 121 62.3 2010 11 183
+  xyzwh 119 62.3 2010 11 183
 end
 durationcanvas 133404 classinstance_ref 128284 // :MPS::Client
   color mediumyellow
-  xyzwh 211 73 2010 11 56
+  xyzwh 209 73 2010 11 56
 end
 durationcanvas 133660 classinstance_ref 128540 // :NuPlayerDriver
   color mediumyellow
-  xyzwh 438 81.2 2010 11 43
+  xyzwh 436 81.2 2010 11 43
 end
 durationcanvas 136348 classinstance_ref 128156 // :MediaPlayer
   color mediumgreen
-  xyzwh 121 314.7 2010 11 107
+  xyzwh 119 314.7 2010 11 107
 end
 durationcanvas 136604 classinstance_ref 128284 // :MPS::Client
   color mediumyellow
-  xyzwh 211 329.9 2010 11 80
+  xyzwh 209 328.8 2010 11 80
 end
 durationcanvas 136860 classinstance_ref 128540 // :NuPlayerDriver
   color mediumyellow
-  xyzwh 438 354.8 2010 11 49
+  xyzwh 436 354.8 2010 11 49
 end
 durationcanvas 137116 classinstance_ref 128668 // :NuPlayer
   color mediumyellow
-  xyzwh 527 370.9 2010 11 238
+  xyzwh 527 369.8 2010 11 238
   overlappingdurationcanvas 140828
     color red
-    xyzwh 533 394.8 2020 11 208
+    xyzwh 533 393.7 2020 11 208
     overlappingdurationcanvas 141340
       color red
       xyzwh 539 453.4 2030 11 144
@@ -70,10 +70,10 @@ durationcanvas 137116 classinstance_ref 128668 // :NuPlayer
 end
 durationcanvas 137372 classinstance_ref 128668 // :NuPlayer
   color gold
-  xyzwh 527 92.8 2010 11 72
+  xyzwh 527 91.7 2010 11 72
   overlappingdurationcanvas 137628
     color red
-    xyzwh 533 106.9 2020 11 46
+    xyzwh 533 105.8 2020 11 46
   end
 end
 durationcanvas 139292 classinstance_ref 128796 // :GenericSource
@@ -94,7 +94,7 @@ durationcanvas 139292 classinstance_ref 128796 // :GenericSource
 end
 durationcanvas 141084 classinstance_ref 128924 // :NuPlayer::Render
   color red
-  xyzwh 724 416.9 2010 11 26
+  xyzwh 724 415.8 2010 11 26
 end
 durationcanvas 142108 classinstance_ref 129052 // :NuPlayer::Decoder
   color red
@@ -106,7 +106,7 @@ durationcanvas 142364 classinstance_ref 129052 // :NuPlayer::Decoder
 end
 durationcanvas 142620 classinstance_ref 129052 // :NuPlayer::Decoder
   color red
-  xyzwh 847 564.8 2010 11 28
+  xyzwh 847 563.7 2010 11 28
 end
 msg 129436 synchronous
   from durationcanvas_ref 129180

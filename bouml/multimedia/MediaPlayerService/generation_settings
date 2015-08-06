@@ -169,7 +169,6 @@ public static final ${class} ${name} = new ${class}(_${name});
 "
   php_default_src_content "<?php
 ${comment}
-${namespace}
 ${require_once}
 ${definition}
 ?>

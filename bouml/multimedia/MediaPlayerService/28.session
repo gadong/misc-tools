@@ -1,14 +1,22 @@
-window_sizes 1400 988 328 984 700 86
+window_sizes 1350 840 290 1054 766 0
 diagrams
-  classdiagram_ref 128258 // MediaCodecList
-    848 663 100 4 0 0
-  active  classdiagram_ref 134786 // sniff
-    1066 829 100 4 0 0
+  sequencediagram_ref 128028 // Seq: setDataSource
+    1054 766 105 3 0 0
+  sequencediagram_ref 128156 // Seq: prepare & start
+    1104 632 105 3 0 0
+  classdiagram_ref 128284 // Org: NuPlayer
+    1054 767 100 3 0 0
+  sequencediagram_ref 135196 // Seq: NuPlayer::instantiateDecoder
+    1054 766 90 3 0 0
+  classdiagram_ref 141724 // Org: Data Stream
+    843 612 100 3 0 0
+  active  classdiagram_ref 148252 // Description
+    1050 767 100 3 0 0
 end
 show_stereotypes
-selected classdiagram_ref 134786 // sniff
+selected classview_ref 141596 // media
 open
-  classview_ref 128130 // MPS
-  classview_ref 128258 // media-codec
+  classview_ref 134556 // NuPlayer
+  class_ref 143644 // SoftOMXComponent
 end
 end
