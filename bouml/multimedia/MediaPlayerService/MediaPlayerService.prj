@@ -1,7 +1,7 @@
 format 75
 "MediaPlayerService"
-  revision 11
-  modified_by 28 "Kevin"
+  revision 12
+  modified_by 28 ""
 
 
   
@@ -54,300 +54,9 @@ format 75
     //activity diagram settings
     package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
     show_infonote default drawing_language default show_stereotype_properties default
-    sequencediagram 128028 "Seq: setDataSource"
-      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
-      overlapping_bars size A3
-    end
-
-    sequencediagram 128156 "Seq: prepare & start"
-      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
-      overlapping_bars size A3
-    end
-
-    sequencediagram 135196 "Seq: NuPlayer::instantiateDecoder"
-      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
-      overlapping_bars size A3
-    end
-
-    classdiagram 128284 "Org: NuPlayer"
-      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-      size A3
-    end
-
     classdiagram 141724 "Org: Data Stream"
       draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
       size A3
-    end
-
-    class 128028 "MediaApp"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 128156 "MediaPlayer"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-      classrelation 129820 // <association>
-	relation_ref 128924 // <association>
-      end
-    end
-
-    class 129180 "MediaCodec"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-      classrelation 136476 // <composition>
-	relation_ref 135452 // <composition>
-      end
-    end
-
-    class 129308 "ACodec"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    state 128156 "ACodec"
-      stereotype "machine"
-      statediagram 135068 "Machine: ACodec"
-	package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
-	show_activities default region_horizontally default drawing_language default show_stereotype_properties default
-	size A3
-      end
-
-      state 128284 "UninitializedState"
-      end
-
-      state 128412 "LoadedState"
-      end
-
-      state 128540 "LoadedToIdleState"
-      end
-
-      state 128668 "IdleToExecutingState"
-      end
-
-      state 128796 "ExecutingState"
-      end
-
-      state 128924 "OutputPortSettingsChangedState"
-      end
-
-      state 129052 "ExecutingToIdleState"
-      end
-
-      state 129180 "IdleToLoadedState"
-      end
-
-      state 129308 "FlushingState"
-      end
-    end
-
-    class 136220 "AState"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 136348 "AHierarchicalStateMachine"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 136476 "ACodec::BaseState"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 143260 "CodecObserver"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 150172 "DataSource"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-      classrelation 137756 // <association>
-	relation_ref 136476 // <association>
-      end
-    end
-
-    class 150300 "FileSource"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-      classrelation 136732 // <generalisation>
-	relation 135708 ---|>
-	  a public
-	    classrelation_ref 136732 // <generalisation>
-	  b parent class_ref 150172 // DataSource
-      end
-    end
-
-    class 150428 "MediaSource"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 150556 "MediaExtractor"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 150684 "Mp3Extractor"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-      classrelation 136860 // <generalisation>
-	relation 135836 ---|>
-	  a public
-	    classrelation_ref 136860 // <generalisation>
-	  b parent class_ref 150556 // MediaExtractor
-      end
-
-      classrelation 137372 // <association>
-	relation 136348 ----
-	  a role_name "" private
-	    classrelation_ref 137372 // <association>
-	  b role_name "" private
-	    classrelation_ref 137500 // <association>
-      end
-
-      classrelation 137628 // <association>
-	relation 136476 ----
-	  a role_name "" private
-	    classrelation_ref 137628 // <association>
-	  b role_name "" private
-	    classrelation_ref 137756 // <association>
-      end
-
-      classrelation 138012 // <association>
-	relation_ref 136604 // <association>
-      end
-    end
-
-    class 150812 "Mp3Source"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-      classrelation 136988 // <generalisation>
-	relation 135964 ---|>
-	  a public
-	    classrelation_ref 136988 // <generalisation>
-	  b parent class_ref 150428 // MediaSource
-      end
-
-      classrelation 137500 // <association>
-	relation_ref 136348 // <association>
-      end
-
-      classrelation 138268 // <association>
-	relation_ref 136732 // <association>
-      end
-
-      classrelation 138524 // <association>
-	relation_ref 136860 // <association>
-      end
-    end
-
-    class 150940 "NativeWindowWrapper"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 151068 "Surface"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
     end
   end
 
@@ -367,6 +76,26 @@ format 75
     //activity diagram settings
     package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
     show_infonote default drawing_language default show_stereotype_properties default
+    classdiagram 128284 "Org: NuPlayer"
+      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3
+    end
+
+    sequencediagram 128028 "Seq: setDataSource"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A3
+    end
+
+    sequencediagram 128156 "Seq: prepare & start"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A3
+    end
+
+    sequencediagram 135196 "Seq: NuPlayer::instantiateDecoder"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A3
+    end
+
     class 128540 "NuPlayerDriver"
       visibility package 
       cpp_decl ""
@@ -430,7 +159,7 @@ format 75
 	relation 128540 -_->
 	  a default
 	    classrelation_ref 129052 // <dependency>
-	  b parent class_ref 128412 // MPS::AudioOuptput
+	  b parent class_ref 128412 // AudioOuptput
       end
     end
 
@@ -568,7 +297,7 @@ format 75
       
     end
 
-    class 128412 "MPS::AudioOuptput"
+    class 128412 "AudioOuptput"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -588,9 +317,17 @@ format 75
       classrelation 139292 // <association>
 	relation_ref 137244 // <association>
       end
+
+      classrelation 145820 // <association>
+	relation 143772 ----
+	  a role_name "" private
+	    classrelation_ref 145820 // <association>
+	  b role_name "" private
+	    classrelation_ref 145948 // <association>
+      end
     end
 
-    class 128284 "MPS::Client"
+    class 128284 "Client"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -637,6 +374,27 @@ format 75
     //activity diagram settings
     package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
     show_infonote default drawing_language default show_stereotype_properties default
+    class 128028 "MediaApp"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 151068 "Surface"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
   end
 
   classview 134940 "OMX"
@@ -751,7 +509,52 @@ format 75
     show_infonote default drawing_language default show_stereotype_properties default
   end
 
-  classview 141596 "media"
+  classview 141596 "libmedia"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 128156 "MediaPlayer"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 129820 // <association>
+	relation_ref 128924 // <association>
+      end
+    end
+
+    class 164124 "AudioTrack"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 145948 // <association>
+	relation_ref 143772 // <association>
+      end
+    end
+  end
+
+  classview 148124 "libstagefright"
     //class diagram settings
     draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
     //collaboration diagram settings
@@ -772,6 +575,241 @@ format 75
       size A3
     end
 
+    class 150940 "NativeWindowWrapper"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 136476 "ACodec::BaseState"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 143260 "CodecObserver"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 136348 "AHierarchicalStateMachine"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 136220 "AState"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 129308 "ACodec"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    state 128156 "ACodec"
+      stereotype "machine"
+      statediagram 135068 "Machine: ACodec"
+	package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+	show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+	size A3
+      end
+
+      state 128284 "UninitializedState"
+      end
+
+      state 128412 "LoadedState"
+      end
+
+      state 128540 "LoadedToIdleState"
+      end
+
+      state 128668 "IdleToExecutingState"
+      end
+
+      state 128796 "ExecutingState"
+      end
+
+      state 128924 "OutputPortSettingsChangedState"
+      end
+
+      state 129052 "ExecutingToIdleState"
+      end
+
+      state 129180 "IdleToLoadedState"
+      end
+
+      state 129308 "FlushingState"
+      end
+    end
+
+    class 150556 "MediaExtractor"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 150812 "Mp3Source"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 136988 // <generalisation>
+	relation 135964 ---|>
+	  a public
+	    classrelation_ref 136988 // <generalisation>
+	  b parent class_ref 150428 // MediaSource
+      end
+
+      classrelation 137500 // <association>
+	relation_ref 136348 // <association>
+      end
+
+      classrelation 138268 // <association>
+	relation_ref 136732 // <association>
+      end
+
+      classrelation 138524 // <association>
+	relation_ref 136860 // <association>
+      end
+    end
+
+    class 150684 "Mp3Extractor"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 136860 // <generalisation>
+	relation 135836 ---|>
+	  a public
+	    classrelation_ref 136860 // <generalisation>
+	  b parent class_ref 150556 // MediaExtractor
+      end
+
+      classrelation 137372 // <association>
+	relation 136348 ----
+	  a role_name "" private
+	    classrelation_ref 137372 // <association>
+	  b role_name "" private
+	    classrelation_ref 137500 // <association>
+      end
+
+      classrelation 137628 // <association>
+	relation 136476 ----
+	  a role_name "" private
+	    classrelation_ref 137628 // <association>
+	  b role_name "" private
+	    classrelation_ref 137756 // <association>
+      end
+
+      classrelation 138012 // <association>
+	relation_ref 136604 // <association>
+      end
+    end
+
+    class 150428 "MediaSource"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 150300 "FileSource"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 136732 // <generalisation>
+	relation 135708 ---|>
+	  a public
+	    classrelation_ref 136732 // <generalisation>
+	  b parent class_ref 150172 // DataSource
+      end
+    end
+
+    class 150172 "DataSource"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 137756 // <association>
+	relation_ref 136476 // <association>
+      end
+    end
+
+    class 129180 "MediaCodec"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 136476 // <composition>
+	relation_ref 135452 // <composition>
+      end
+    end
+
     class 157596 "MediaCodecList"
       visibility package 
       cpp_decl ""
@@ -781,6 +819,40 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+    end
+  end
+
+  usecaseview 128028 "XXX"
+    //use case diagram settings
+    package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    usecasediagram 154908 "xxx"
+      package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+      size A3
+    end
+  end
+
+  componentview 128028 "YYY"
+    //component diagram settings
+    package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    componentdiagram 154780 "YYY"
+      package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+      draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+      size A3
     end
   end
 end

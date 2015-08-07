@@ -1,3 +1,7 @@
-format 74
+format 75
 
+note 128028 "1) path -> FileSource
+2) media_codecs.xml -> MediaCodecList
+3) libstagefright_xxx -> Software Encoders/Decoders"
+  xyzwh 13 12 2000 381 97
 end
