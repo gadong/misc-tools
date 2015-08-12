@@ -82,7 +82,7 @@ end
 note 135068 "1) prepare
     kWhatPrepare: new GenericSource
 2) start
-    kWhatStart
+    kWhatStart: new Render
     kWhatScanSources
          instantiateDecoder(Audio): new Decoder, init, configure
          instantiateDecoder(Video): new Decoder, init, configure
