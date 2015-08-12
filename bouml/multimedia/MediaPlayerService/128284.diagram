@@ -38,7 +38,7 @@ note 130076 "Threads: (Looper/Thread Name, Handler)
 3) generic: GenericSource
 4) NuPlayerRenderer: NuPlayerRender
 "
-  xyzwh 48 583 2000 291 95
+  xyzwh 750 48 2000 291 95
 classcanvas 130204 class_ref 129180 // MediaCodec
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyz 291 485 2000
@@ -79,6 +79,15 @@ classcanvas 134684 class_ref 151068 // Surface
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyz 70 485 2000
 end
+note 135068 "1) prepare
+    kWhatPrepare: new GenericSource
+2) start
+    kWhatStart
+    kWhatScanSources
+         instantiateDecoder(Audio): new Decoder, init, configure
+         instantiateDecoder(Video): new Decoder, init, configure
+"
+  xyzwh 83 580 2000 473 147
 relationcanvas 129052 relation_ref 128028 // <composition>
   from ref 128156 z 2001 to ref 128028
   no_role_a no_role_b
