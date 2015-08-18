@@ -22,22 +22,22 @@ classinstance 133916 class_ref 143644 // SoftOMXComponent
   name ""   xyz 937.4 5.2 2000 life_line_z 2000
 durationcanvas 128540 classinstance_ref 128028 // :NuPlayer
   color red
-  xyzwh 62 58.9 2010 11 839
+  xyzwh 62 58 2010 11 839
 end
 durationcanvas 128668 classinstance_ref 128156 // :NuPlayer::Decoder
   color red
-  xyzwh 163 55.6 2010 11 26
+  xyzwh 163 55 2010 11 26
 end
 durationcanvas 128924 classinstance_ref 128156 // :NuPlayer::Decoder
   color red
-  xyzwh 163 91.1 2010 11 25
+  xyzwh 163 91 2010 11 25
 end
 durationcanvas 129180 classinstance_ref 128156 // :NuPlayer::Decoder
   color red
-  xyzwh 163 123.4 2010 11 780
+  xyzwh 163 123 2010 11 780
   overlappingdurationcanvas 129436
     color blue
-    xyzwh 169 137.2 2020 11 760
+    xyzwh 169 137 2020 11 760
     overlappingdurationcanvas 129692
       color blue
       xyzwh 175 172 2030 11 718
@@ -46,63 +46,63 @@ durationcanvas 129180 classinstance_ref 128156 // :NuPlayer::Decoder
 end
 durationcanvas 129948 classinstance_ref 128284 // :MediaCodec
   color blue
-  xyzwh 272 207.4 2010 11 151
+  xyzwh 274 207 2010 11 151
   overlappingdurationcanvas 130716
     color blue
-    xyzwh 278 213 2020 11 136
+    xyzwh 280 213 2020 11 136
     overlappingdurationcanvas 131228
       color magenta
-      xyzwh 284 266.4 2030 11 74
+      xyzwh 286 266 2030 11 74
     end
   end
 end
 durationcanvas 130204 classinstance_ref 128284 // :MediaCodec
   color blue
-  xyzwh 272 656 2010 11 90
+  xyzwh 274 656 2010 11 90
   overlappingdurationcanvas 135964
     color magenta
-    xyzwh 278 678.3 2020 11 44
+    xyzwh 280 678 2020 11 44
   end
 end
 durationcanvas 130460 classinstance_ref 128284 // :MediaCodec
   color blue
-  xyzwh 272 845.8 2010 11 79
+  xyzwh 274 845 2010 11 79
 end
 durationcanvas 130972 classinstance_ref 128412 // :ACodec
   color blue
-  xyzwh 372 233.2 2010 11 27
+  xyzwh 372 233 2010 11 27
 end
 durationcanvas 131484 classinstance_ref 128412 // :ACodec
   color magenta
-  xyzwh 372 299.6 2010 11 338
+  xyzwh 372 299 2010 11 338
   overlappingdurationcanvas 131740
     color lightorange
-    xyzwh 378 319.8 2020 11 311
+    xyzwh 378 319 2020 11 311
     overlappingdurationcanvas 132124
       color lightorange
-      xyzwh 384 341.7 2030 11 280
+      xyzwh 384 341 2030 11 280
     end
   end
 end
 durationcanvas 132380 classinstance_ref 131996 // :OMX
   color mediumyellow
-  xyzwh 579 417.7 2010 11 109
+  xyzwh 579 417 2010 11 109
 end
 durationcanvas 132764 classinstance_ref 132636 // :CodecObserver
   color lightorange
-  xyzwh 475 372.2 2010 11 30
+  xyzwh 476 372 2010 11 30
 end
 durationcanvas 133148 classinstance_ref 133020 // :OMXNodeInstance
   color mediumyellow
-  xyzwh 679 437.6 2010 11 83
+  xyzwh 679 437 2010 11 83
 end
 durationcanvas 133660 classinstance_ref 133404 // :OMXMaster
   color mediumyellow
-  xyzwh 782 448.7 2010 11 66
+  xyzwh 782 448 2010 11 66
 end
 durationcanvas 134044 classinstance_ref 133532 // :SoftOMXPlugin
   color mediumyellow
-  xyzwh 877 473.9 2010 11 48
+  xyzwh 877 473 2010 11 48
 end
 durationcanvas 134300 classinstance_ref 133916 // :SoftOMXComponent
   color mediumyellow
@@ -110,22 +110,22 @@ durationcanvas 134300 classinstance_ref 133916 // :SoftOMXComponent
 end
 durationcanvas 134812 classinstance_ref 131996 // :OMX
   color mediumyellow
-  xyzwh 579 552.1 2010 11 63
+  xyzwh 579 552 2010 11 63
 end
 durationcanvas 135068 classinstance_ref 133020 // :OMXNodeInstance
   color mediumyellow
-  xyzwh 679 568.1 2010 11 32
+  xyzwh 679 568 2010 11 32
 end
 durationcanvas 135708 classinstance_ref 133916 // :SoftOMXComponent
   color mediumyellow
-  xyzwh 994 584.9 2010 11 27
+  xyzwh 994 584 2010 11 27
 end
 durationcanvas 136220 classinstance_ref 128412 // :ACodec
   color magenta
-  xyzwh 372 704.7 2010 11 75
+  xyzwh 372 704 2010 11 75
   overlappingdurationcanvas 136476
     color lightorange
-    xyzwh 378 730.7 2020 11 43
+    xyzwh 378 730 2020 11 43
   end
 end
 msg 128796 synchronous

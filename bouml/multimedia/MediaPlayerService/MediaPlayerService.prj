@@ -1,6 +1,6 @@
 format 75
 "MediaPlayerService"
-  revision 20
+  revision 22
   modified_by 28 ""
 
 
@@ -92,6 +92,11 @@ format 75
     end
 
     sequencediagram 135196 "Seq: NuPlayer::instantiateDecoder"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A3
+    end
+
+    sequencediagram 154908 "Seq: loop"
       show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
       overlapping_bars size A3
     end
@@ -413,6 +418,35 @@ format 75
 	  b role_name "" private
 	    classrelation_ref 153116 // <association>
       end
+
+      classrelation 159644 // <generalisation>
+	relation 157084 ---|>
+	  a public
+	    classrelation_ref 159644 // <generalisation>
+	  b parent class_ref 170652 // ANativeWindow
+      end
+    end
+
+    class 170652 "ANativeWindow"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 160156 // <association>
+	relation_ref 157340 // <association>
+      end
+
+      classrelation 160284 // <association>
+	relation 157468 ----
+	  a role_name "" private
+	    classrelation_ref 160284 // <association>
+	  b role_name "" private
+	    classrelation_ref 160412 // <association>
+      end
     end
   end
 
@@ -432,6 +466,11 @@ format 75
     //activity diagram settings
     package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
     show_infonote default drawing_language default show_stereotype_properties default
+    classdiagram 155036 "Org: OMX"
+      draw_all_relations no hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3
+    end
+
     class 143644 "SoftOMXComponent"
       visibility package 
       cpp_decl ""
@@ -441,6 +480,17 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 163996 // <association>
+	relation_ref 159516 // <association>
+      end
+
+      classrelation 164252 // <association>
+	relation_ref 159644 // <association>
+      end
+
+      classrelation 164508 // <association>
+	relation_ref 159772 // <association>
+      end
     end
 
     class 143516 "SoftOMXPlugin"
@@ -452,6 +502,20 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 162076 // <generalisation>
+	relation 158492 ---|>
+	  a public
+	    classrelation_ref 162076 // <generalisation>
+	  b parent class_ref 171292 // OMXPluginBase
+      end
+
+      classrelation 164380 // <association>
+	relation 159772 ----
+	  a role_name "" private
+	    classrelation_ref 164380 // <association>
+	  b role_name "" private
+	    classrelation_ref 164508 // <association>
+      end
     end
 
     class 143388 "OMXMaster"
@@ -463,6 +527,16 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 161692 // <generalisation>
+	relation 158236 ---|>
+	  a public
+	    classrelation_ref 161692 // <generalisation>
+	  b parent class_ref 171292 // OMXPluginBase
+      end
+
+      classrelation 161948 // <association>
+	relation_ref 158364 // <association>
+      end
     end
 
     class 129564 "OMXClient"
@@ -485,6 +559,17 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 160924 // <association>
+	relation_ref 157724 // <association>
+      end
+
+      classrelation 164764 // <association>
+	relation 160028 ----
+	  a role_name "" private
+	    classrelation_ref 164764 // <association>
+	  b role_name "" private
+	    classrelation_ref 164892 // <association>
+      end
     end
 
     class 136604 "OMXNodeInstance"
@@ -496,6 +581,37 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 161308 // <association>
+	relation_ref 157980 // <association>
+      end
+
+      classrelation 161436 // <association>
+	relation 158108 ----
+	  a role_name "" private
+	    classrelation_ref 161436 // <association>
+	  b role_name "" private
+	    classrelation_ref 161564 // <association>
+      end
+
+      classrelation 163228 // <association>
+	relation_ref 159132 // <association>
+      end
+
+      classrelation 163356 // <association>
+	relation 159260 ----
+	  a role_name "" private
+	    classrelation_ref 163356 // <association>
+	  b role_name "" private
+	    classrelation_ref 163484 // <association>
+      end
+
+      classrelation 171420 // <association>
+	relation 166556 ----
+	  a role_name "" private
+	    classrelation_ref 171420 // <association>
+	  b role_name "" private
+	    classrelation_ref 171548 // <association>
+      end
     end
 
     class 143132 "OMX"
@@ -507,6 +623,183 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 161564 // <association>
+	relation_ref 158108 // <association>
+      end
+
+      classrelation 161820 // <association>
+	relation 158364 ----
+	  a role_name "" private
+	    classrelation_ref 161820 // <association>
+	  b role_name "" private
+	    classrelation_ref 161948 // <association>
+      end
+
+      classrelation 162332 // <association>
+	relation 158748 ----
+	  a role_name "" private
+	    classrelation_ref 162332 // <association>
+	  b role_name "" private
+	    classrelation_ref 162460 // <association>
+      end
+
+      classrelation 164892 // <association>
+	relation_ref 160028 // <association>
+      end
+    end
+
+    class 170908 "OMXObserver"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 161180 // <association>
+	relation 157980 ----
+	  a role_name "" private
+	    classrelation_ref 161180 // <association>
+	  b role_name "" private
+	    classrelation_ref 161308 // <association>
+      end
+    end
+
+    class 171036 "OMXCodecObserver"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 160796 // <association>
+	relation 157724 ----
+	  a role_name "" private
+	    classrelation_ref 160796 // <association>
+	  b role_name "" private
+	    classrelation_ref 160924 // <association>
+      end
+
+      classrelation 161052 // <generalisation>
+	relation 157852 ---|>
+	  a public
+	    classrelation_ref 161052 // <generalisation>
+	  b parent class_ref 170908 // OMXObserver
+      end
+    end
+
+    class 171164 "CallbackDispatcher"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 162460 // <association>
+	relation_ref 158748 // <association>
+      end
+
+      classrelation 171548 // <association>
+	relation_ref 166556 // <association>
+      end
+    end
+
+    class 171292 "OMXPluginBase"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 171420 "QComOMXPlugin"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 162204 // <generalisation>
+	relation 158620 ---|>
+	  a public
+	    classrelation_ref 162204 // <generalisation>
+	  b parent class_ref 171292 // OMXPluginBase
+      end
+    end
+
+    class 171548 "OMX_CALLBACKTYPE"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 163100 // <association>
+	relation 159132 ----
+	  a role_name "" private
+	    classrelation_ref 163100 // <association>
+	  b role_name "" private
+	    classrelation_ref 163228 // <association>
+      end
+
+      classrelation 164124 // <association>
+	relation 159644 ----
+	  a role_name "" private
+	    classrelation_ref 164124 // <association>
+	  b role_name "" private
+	    classrelation_ref 164252 // <association>
+      end
+    end
+
+    class 171676 "OMX_COMPONENTTYPE"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 163484 // <association>
+	relation_ref 159260 // <association>
+      end
+
+      classrelation 163868 // <association>
+	relation 159516 ----
+	  a role_name "" private
+	    classrelation_ref 163868 // <association>
+	  b role_name "" private
+	    classrelation_ref 163996 // <association>
+      end
+    end
+
+    class 171804 "SoftMP3"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 164636 // <generalisation>
+	relation 159900 ---|>
+	  a public
+	    classrelation_ref 164636 // <generalisation>
+	  b parent class_ref 143644 // SoftOMXComponent
+      end
     end
   end
 
@@ -669,6 +962,17 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 159900 // <association>
+	relation_ref 157212 // <association>
+      end
+
+      classrelation 160028 // <association>
+	relation 157340 ----
+	  a role_name "" private
+	    classrelation_ref 160028 // <association>
+	  b role_name "" private
+	    classrelation_ref 160156 // <association>
+      end
     end
 
     state 128156 "ACodec"
@@ -842,6 +1146,22 @@ format 75
       classrelation 153116 // <association>
 	relation_ref 150556 // <association>
       end
+
+      classrelation 159772 // <association>
+	relation 157212 ----
+	  a role_name "" private
+	    classrelation_ref 159772 // <association>
+	  b role_name "" private
+	    classrelation_ref 159900 // <association>
+      end
+
+      classrelation 160540 // <association>
+	relation 157596 ----
+	  a role_name "" private
+	    classrelation_ref 160540 // <association>
+	  b role_name "" private
+	    classrelation_ref 160668 // <association>
+      end
     end
 
     class 157596 "MediaCodecList"
@@ -853,6 +1173,24 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+    end
+
+    class 170780 "SoftwareRenderer"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 160412 // <association>
+	relation_ref 157468 // <association>
+      end
+
+      classrelation 160668 // <association>
+	relation_ref 157596 // <association>
+      end
     end
   end
 end
