@@ -1,6 +1,6 @@
 format 75
 "MediaPlayerService"
-  revision 22
+  revision 23
   modified_by 28 ""
 
 
@@ -1191,6 +1191,17 @@ format 75
       classrelation 160668 // <association>
 	relation_ref 157596 // <association>
       end
+    end
+
+    class 178332 "ABuffer"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
     end
   end
 end
