@@ -1,0 +1,14 @@
+window_sizes 1575 918 256 1313 700 82
+diagrams
+  active  classdiagram_ref 128028 // Ring
+    1313 762 100 4 0 0
+end
+show_stereotypes
+selected class_ref 128796 // AsyncRingtonePlayer
+open
+  classview_ref 134556 // UC-Ring
+  classview_ref 141084 // android.media
+  classview_ref 141212 // com.android.systemui.media
+  classview_ref 141340 // com.android.server.telecom
+end
+end

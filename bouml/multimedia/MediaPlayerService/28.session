@@ -1,4 +1,4 @@
-window_sizes 1676 988 290 1054 766 0
+window_sizes 1680 988 290 1054 766 0
 diagrams
   sequencediagram_ref 128156 // Seq: prepare & start
     1104 632 105 3 0 0
@@ -10,18 +10,19 @@ diagrams
     1103 731 100 3 0 0
   sequencediagram_ref 154908 // Seq: loop
     1103 731 100 3 0 0
-  active  classdiagram_ref 155036 // Org: OMX
+  classdiagram_ref 155036 // Org: OMX
     1380 912 100 3 0 0
   classdiagram_ref 148252 // Description
     1100 731 100 3 0 0
+  active  classdiagram_ref 161564 // Org: Buffer
+    1384 912 100 3 0 0
 end
 show_stereotypes
-selected classdiagram_ref 155036 // Org: OMX
+selected class_ref 185372 // GraphicBuffer
 open
   classview_ref 128028 // Overview
-  classview_ref 134556 // NuPlayer
-  class_ref 171164 // CallbackDispatcher
-  classview_ref 141596 // libmedia
-  classview_ref 148124 // libstagefright
+  class_ref 129052 // GenericSource
+  classview_ref 134684 // MPS
+  classview_ref 134812 // Misc
 end
 end

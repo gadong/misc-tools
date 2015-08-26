@@ -1,6 +1,6 @@
 format 75
 "MediaPlayerService"
-  revision 23
+  revision 24
   modified_by 28 ""
 
 
@@ -54,6 +54,11 @@ format 75
     //activity diagram settings
     package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
     show_infonote default drawing_language default show_stereotype_properties default
+    classdiagram 161564 "Org: Buffer"
+      draw_all_relations no hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3
+    end
+
     classdiagram 141724 "Org: Data Stream"
       draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
       size A3
@@ -280,6 +285,48 @@ format 75
       classrelation 138780 // <association>
 	relation_ref 136988 // <association>
       end
+
+      classrelation 178844 // <composition>
+	relation 173468 *---
+	  a role_name "" private
+	    classrelation_ref 178844 // <composition>
+	  b role_name "" private
+	    classrelation_ref 178972 // <composition>
+      end
+    end
+
+    class 184860 "Track"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 178204 // <aggregation>
+	relation_ref 173084 // <aggregation>
+      end
+
+      classrelation 178332 // <aggregation>
+	relation 173212 o---
+	  a role_name "" private
+	    classrelation_ref 178332 // <aggregation>
+	  b role_name "" private
+	    classrelation_ref 178460 // <aggregation>
+      end
+
+      classrelation 178588 // <aggregation>
+	relation 173340 o---
+	  a role_name "" private
+	    classrelation_ref 178588 // <aggregation>
+	  b role_name "" private
+	    classrelation_ref 178716 // <aggregation>
+      end
+
+      classrelation 178972 // <composition>
+	relation_ref 173468 // <composition>
+      end
     end
   end
 
@@ -446,6 +493,20 @@ format 75
 	    classrelation_ref 160284 // <association>
 	  b role_name "" private
 	    classrelation_ref 160412 // <association>
+      end
+    end
+
+    class 185372 "GraphicBuffer"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 179484 // <composition>
+	relation_ref 173852 // <composition>
       end
     end
   end
@@ -1097,6 +1158,17 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 178076 // <aggregation>
+	relation 173084 o---
+	  a role_name "" private
+	    classrelation_ref 178076 // <aggregation>
+	  b role_name "" private
+	    classrelation_ref 178204 // <aggregation>
+      end
+
+      classrelation 178460 // <aggregation>
+	relation_ref 173212 // <aggregation>
+      end
     end
 
     class 150300 "FileSource"
@@ -1194,6 +1266,74 @@ format 75
     end
 
     class 178332 "ABuffer"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 179740 // <composition>
+	relation_ref 173980 // <composition>
+      end
+    end
+
+    class 184988 "AnotherPacketSource"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 178716 // <aggregation>
+	relation_ref 173340 // <aggregation>
+      end
+
+      classrelation 179100 // <generalisation>
+	relation 173596 ---|>
+	  a public
+	    classrelation_ref 179100 // <generalisation>
+	  b parent class_ref 150428 // MediaSource
+      end
+    end
+
+    class 185116 "MediaBuffer"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 179228 // <generalisation>
+	relation 173724 ---|>
+	  a public
+	    classrelation_ref 179228 // <generalisation>
+	  b parent class_ref 185244 // MediaBufferBase
+      end
+
+      classrelation 179356 // <composition>
+	relation 173852 *---
+	  a role_name "" private
+	    classrelation_ref 179356 // <composition>
+	  b role_name "" private
+	    classrelation_ref 179484 // <composition>
+      end
+
+      classrelation 179612 // <composition>
+	relation 173980 *---
+	  a role_name "" private
+	    classrelation_ref 179612 // <composition>
+	  b role_name "" private
+	    classrelation_ref 179740 // <composition>
+      end
+    end
+
+    class 185244 "MediaBufferBase"
       visibility package 
       cpp_decl ""
       java_decl ""
