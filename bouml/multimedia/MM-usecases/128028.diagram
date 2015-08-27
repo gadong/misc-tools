@@ -14,19 +14,19 @@ classcanvas 128284 class_ref 128284 // MediaPlayer
 end
 classcanvas 128668 class_ref 128540 // RingtonePlayer
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 532 137 2000
+  xyz 534 137 2000
 end
 classcanvas 128796 class_ref 128412 // AudioService
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 538 293 2000
+  xyz 540 290 2000
 end
 classcanvas 129308 class_ref 128668 // Ringer
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 213 43 2000
+  xyz 213 43 2005
 end
 classcanvas 129436 class_ref 128796 // AsyncRingtonePlayer
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 174 102 2005
+  xyz 174 102 2010
 end
 note 129820 "Gits: 
 packages/services/Telecomm/src/com/android/server/telecom/
@@ -37,7 +37,15 @@ Loop:
 Auto Loop:  Meta Info:  ANDROID_LOOP , kKeyAutoLoop
 Loop by AsyncRingtonePlayer
 "
-  xyzwh 26 440 2000 497 173
+  xyzwh 124 451 2000 343 141
+note 130076 "Telecom"
+  color lightmediumgreen  xyzwh 119 24 2000 235 153
+note 130204 "media"
+  xyzwh 126 219 2000 231 195
+note 130332 "media"
+  color lightmediumgreen  xyzwh 491 252 2000 201 139
+note 130460 "systemUI"
+  color lightmagenta  xyzwh 488 94 2000 205 119
 relationcanvas 128412 relation_ref 128028 // <association>
   from ref 128156 z 2001 to ref 128028
   no_role_a no_role_b
