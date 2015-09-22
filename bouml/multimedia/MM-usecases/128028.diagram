@@ -41,11 +41,11 @@ Loop by AsyncRingtonePlayer
 note 130076 "Telecom"
   color lightmediumgreen  xyzwh 119 24 2000 235 153
 note 130204 "media"
-  xyzwh 126 219 2000 231 195
+  xyzwh 127 216 0 231 195
 note 130332 "media"
-  color lightmediumgreen  xyzwh 491 252 2000 201 139
+  color lightmediumgreen  xyzwh 491 252 0 201 139
 note 130460 "systemUI"
-  color lightmagenta  xyzwh 488 94 2000 205 119
+  color lightmagenta  xyzwh 488 94 0 205 119
 relationcanvas 128412 relation_ref 128028 // <association>
   from ref 128156 z 2001 to ref 128028
   no_role_a no_role_b
