@@ -1,6 +1,6 @@
 format 75
 "MediaPlayerService"
-  revision 24
+  revision 25
   modified_by 28 ""
 
 
@@ -293,6 +293,13 @@ format 75
 	  b role_name "" private
 	    classrelation_ref 178972 // <composition>
       end
+
+      classrelation 186268 // <generalisation>
+	relation 180508 ---|>
+	  a public
+	    classrelation_ref 186268 // <generalisation>
+	  b parent class_ref 191900 // Nuplayer::Source
+      end
     end
 
     class 184860 "Track"
@@ -327,6 +334,17 @@ format 75
       classrelation 178972 // <composition>
 	relation_ref 173468 // <composition>
       end
+    end
+
+    class 191900 "Nuplayer::Source"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
     end
   end
 

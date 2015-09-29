@@ -106,6 +106,10 @@ note 136220 "ANativeWindow:
      1) Tunnel Mode Video: managed by ACodec
      2) SW Decoder: Software Render"
   xyzwh 78 657 2000 281 67
+classcanvas 136348 class_ref 191900 // Nuplayer::Source
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 563 233 2000
+end
 relationcanvas 129052 relation_ref 128028 // <composition>
   from ref 128156 z 2001 to ref 128028
   no_role_a no_role_b
@@ -250,6 +254,11 @@ relationcanvas 135964 relation_ref 157468 // <association>
 end
 relationcanvas 136092 relation_ref 157596 // <association>
   from ref 130204 z 2001 to ref 135836
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 136476 relation_ref 180508 // <generalisation>
+  from ref 128924 z 2001 to ref 136348
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
