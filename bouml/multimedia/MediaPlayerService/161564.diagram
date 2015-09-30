@@ -52,10 +52,10 @@ classcanvas 131356 class_ref 185372 // GraphicBuffer
   xyz 305 655 2000
 end
 note 131612 "MediaBuffer: 
-1)  ABuffer   
-2)  GraphicBuffer   
-3)  RawData   "
-  xyzwh 574 521 2000 291 107
+1)  from ABuffer   
+2)  from GraphicBuffer   
+3)  from RawData   "
+  xyzwh 325 517 2000 291 107
 relationcanvas 128668 relation_ref 173212 // <aggregation>
   from ref 128028 z 2001 to ref 128284
   no_role_a no_role_b
