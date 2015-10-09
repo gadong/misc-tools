@@ -22,7 +22,7 @@ classinstance 133916 class_ref 143644 // SoftOMXComponent
   name ""   xyz 937.4 5.2 2000 life_line_z 2000
 durationcanvas 128540 classinstance_ref 128028 // :NuPlayer
   color red
-  xyzwh 62 58 2010 11 839
+  xyzwh 62 59 2010 11 993
 end
 durationcanvas 128668 classinstance_ref 128156 // :NuPlayer::Decoder
   color red
@@ -34,13 +34,13 @@ durationcanvas 128924 classinstance_ref 128156 // :NuPlayer::Decoder
 end
 durationcanvas 129180 classinstance_ref 128156 // :NuPlayer::Decoder
   color red
-  xyzwh 163 123 2010 11 780
+  xyzwh 163 123 2010 11 904
   overlappingdurationcanvas 129436
     color blue
-    xyzwh 169 137 2020 11 760
+    xyzwh 169 137 2020 11 884
     overlappingdurationcanvas 129692
       color blue
-      xyzwh 175 172 2030 11 718
+      xyzwh 175 172 2030 11 844
     end
   end
 end
@@ -66,7 +66,7 @@ durationcanvas 130204 classinstance_ref 128284 // :MediaCodec
 end
 durationcanvas 130460 classinstance_ref 128284 // :MediaCodec
   color blue
-  xyzwh 274 845 2010 11 79
+  xyzwh 274 910 2010 11 79
 end
 durationcanvas 130972 classinstance_ref 128412 // :ACodec
   color blue
@@ -122,30 +122,42 @@ durationcanvas 135708 classinstance_ref 133916 // :SoftOMXComponent
 end
 durationcanvas 136220 classinstance_ref 128412 // :ACodec
   color magenta
-  xyzwh 372 704 2010 11 75
+  xyzwh 372 704 2010 11 165
   overlappingdurationcanvas 136476
     color lightorange
-    xyzwh 378 730 2020 11 43
+    xyzwh 378 730 2020 11 133
+    overlappingdurationcanvas 136732
+      color lightorange
+      xyzwh 384 749 2030 11 96
+      overlappingdurationcanvas 136988
+	color lightorange
+	xyzwh 390 773 2040 11 59
+      end
+    end
   end
+end
+durationcanvas 137244 classinstance_ref 131996 // :OMX
+  color mediumyellow
+  xyzwh 579 798 2010 11 25
 end
 msg 128796 synchronous
   from durationcanvas_ref 128540
   to durationcanvas_ref 128668
-  yz 59 2015 explicitmsg "<<create>>"
+  yz 60 2015 explicitmsg "<<create>>"
   show_full_operations_definition default drawing_language default show_context_mode default
-  label_xy 85 43
+  label_xy 85 44
 msg 129052 synchronous
   from durationcanvas_ref 128540
   to durationcanvas_ref 128924
-  yz 93 2015 explicitmsg "init()"
+  yz 94 2015 explicitmsg "init()"
   show_full_operations_definition default drawing_language default show_context_mode default
-  label_xy 104 76
+  label_xy 104 77
 msg 129308 synchronous
   from durationcanvas_ref 128540
   to durationcanvas_ref 129180
-  yz 128 2015 explicitmsg "configure()"
+  yz 129 2015 explicitmsg "configure()"
   show_full_operations_definition default drawing_language default show_context_mode default
-  label_xy 86 112
+  label_xy 86 113
 reflexivemsg 129564 asynchronous
   to durationcanvas_ref 129436
   yz 137 2025 explicitmsg "kWhatConfigure"
@@ -171,9 +183,9 @@ msg 130332 synchronous
 msg 130588 synchronous
   from durationcanvas_ref 129692
   to durationcanvas_ref 130460
-  yz 851 2035 explicitmsg "start()"
+  yz 916 2035 explicitmsg "start()"
   show_full_operations_definition default drawing_language default show_context_mode default
-  label_xy 212 835
+  label_xy 212 900
 reflexivemsg 130844 synchronous
   to durationcanvas_ref 130716
   yz 213 2025 explicitmsg "init()"
@@ -291,4 +303,20 @@ reflexivemsg 136604 asynchronous
   yz 731 3005 explicitmsg "kWhatConfigureComponent"
   show_full_operations_definition default drawing_language default show_context_mode default
   label_xy 390 717
+reflexivemsg 136860 synchronous
+  to durationcanvas_ref 136732
+  yz 749 3010 explicitmsg "onConfigureComponent()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 410 737
+reflexivemsg 137116 synchronous
+  to durationcanvas_ref 136988
+  yz 773 2045 explicitmsg "configureCodec()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 430 760
+msg 137372 asynchronous
+  from durationcanvas_ref 136988
+  to durationcanvas_ref 137244
+  yz 798 2050 explicitmsg "...video/audio configure"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 427 783
 end

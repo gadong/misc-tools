@@ -1,13 +1,30 @@
 window_sizes 1680 988 290 1054 766 0
+diagrams
+  classdiagram_ref 161564 // Org: Buffer
+    1103 731 100 3 0 0
+  classdiagram_ref 141724 // Org: Data Stream
+    1103 731 100 3 0 0
+  classdiagram_ref 128284 // Class Org: NuPlayer
+    1384 912 100 3 0 0
+  sequencediagram_ref 154908 // Seq: loop
+    1103 729 100 3 0 0
+  sequencediagram_ref 128156 // Seq: prepare & start
+    1103 729 105 3 0 0
+  active  sequencediagram_ref 135196 // Seq: NuPlayer::instantiateDecoder
+    1384 912 100 3 288 0
+  objectdiagram_ref 168092 // Object Org:NuPlayer
+    1103 729 100 3 0 0
+  sequencediagram_ref 128028 // Seq: setDataSource
+    1103 729 105 3 0 0
+end
 show_stereotypes
-selected state_ref 128156 // ACodec
+selected classdiagram_ref 155036 // Org: OMX
 open
   classview_ref 128028 // Overview
-  class_ref 128796 // NuPlayer::Render
-  class_ref 128924 // NuPlayer::Decoder
-  class_ref 129052 // GenericSource
-  classview_ref 134684 // MPS
+  classview_ref 134556 // NuPlayer
+  class_ref 128284 // Client
   class_ref 185372 // GraphicBuffer
+  classview_ref 134940 // OMX
   classview_ref 141596 // libmedia
   classview_ref 148124 // libstagefright
 end

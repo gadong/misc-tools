@@ -1,6 +1,6 @@
 format 75
 "MediaPlayerService"
-  revision 26
+  revision 27
   modified_by 28 ""
 
 
@@ -81,8 +81,13 @@ format 75
     //activity diagram settings
     package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
     show_infonote default drawing_language default show_stereotype_properties default
-    classdiagram 128284 "Org: NuPlayer"
+    classdiagram 128284 "Class Org: NuPlayer"
       draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3
+    end
+
+    objectdiagram 168092 "Object Org:NuPlayer"
+       write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
       size A3
     end
 
@@ -345,6 +350,78 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+    end
+
+    classinstance 128028 ""
+      type class_ref 128668 // NuPlayer
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128156 ""
+      type class_ref 129052 // GenericSource
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128284 ""
+      type class_ref 128796 // NuPlayer::Render
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128412 ""
+      type class_ref 128924 // NuPlayer::Decoder
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128540 ""
+      type class_ref 128924 // NuPlayer::Decoder
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128668 ""
+      type class_ref 129180 // MediaCodec
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128796 ""
+      type class_ref 129180 // MediaCodec
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128924 ""
+      type class_ref 129308 // ACodec
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129180 ""
+      type class_ref 128540 // NuPlayerDriver
+      attributes
+        end
+      relations
+        end
     end
   end
 
