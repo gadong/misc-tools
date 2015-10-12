@@ -1,0 +1,10 @@
+ThreadID	Looper	Handler
+11553	NuPlayerDriver Looper	NuPlayer
+11554	generic	GenericSource
+11623	NuPlayerRender	NuPlayerRender
+11624	NPDecoder(video)	NuPlayerDecoder
+11625	NPDecoder-CL(video)	MediaCodec
+11626	CodecLooper	Acodec(OMX.qcom.video.decoder.avc)
+11627	NPDecoder(audio)	NuPlayerDecoder
+11628	NPDecoder-CL(audio)	MediaCodec
+		Acodec(OMX.google.aac.decoder)
