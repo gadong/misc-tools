@@ -27,7 +27,7 @@ end
 classinstancecanvas 130716 classinstance_ref 129180 // 
   xyz 187 72 2000
 end
-note 131484 "NuPlayerDriver:
+note 131484 "NuPlayerDriver(in binder Thread)
 
 1) creat NuPlayer
 2) call NuPlayer::setAudioSink
@@ -38,6 +38,10 @@ note 131484 "NuPlayerDriver:
   xyzwh 426 20 2000 335 143
 note 131612 "Each Object represents a Binder/Looper Thread"
   xyzwh 69 27 2000 313 35
+note 131868 "Audio"
+  color darkgreen  xyzwh 297 182 2000 165 201
+note 131996 "Video"
+  color darkmagenta  xyzwh 18 184 2000 169 257
 objectlinkcanvas 129180 norel
   from ref 128028 z 2001 to ref 128156
   no_role_a no_role_b
@@ -72,5 +76,8 @@ objectlinkcanvas 130332 norel
   no_role_a no_role_b
 objectlinkcanvas 131356 norel
   from ref 130716 z 2001 to ref 128028
+  no_role_a no_role_b
+objectlinkcanvas 131740 norel
+  from ref 128412 z 2001 to ref 128284
   no_role_a no_role_b
 end
