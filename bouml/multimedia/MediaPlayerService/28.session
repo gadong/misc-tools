@@ -1,10 +1,12 @@
 window_sizes 1680 988 290 1054 766 0
 diagrams
-  active  sequencediagram_ref 154908 // Seq: loop
+  sequencediagram_ref 154908 // Seq: loop
+    1384 912 100 3 0 0
+  active  sequencediagram_ref 174620 // Seq: loop(Render&ANativeWindow)
     1384 912 100 3 0 0
 end
 show_stereotypes
-selected sequencediagram_ref 154908 // Seq: loop
+selected sequencediagram_ref 174620 // Seq: loop(Render&ANativeWindow)
 open
   classview_ref 128028 // Overview
   classview_ref 134556 // NuPlayer

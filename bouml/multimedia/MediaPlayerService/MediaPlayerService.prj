@@ -1,6 +1,6 @@
 format 75
 "MediaPlayerService"
-  revision 31
+  revision 32
   modified_by 28 ""
 
 
@@ -107,6 +107,11 @@ format 75
     end
 
     sequencediagram 154908 "Seq: loop"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A3
+    end
+
+    sequencediagram 174620 "Seq: loop(Render&ANativeWindow)"
       show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
       overlapping_bars size A3
     end
