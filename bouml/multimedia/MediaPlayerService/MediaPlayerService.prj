@@ -1,6 +1,6 @@
 format 75
 "MediaPlayerService"
-  revision 32
+  revision 35
   modified_by 28 ""
 
 
@@ -107,11 +107,6 @@ format 75
     end
 
     sequencediagram 154908 "Seq: loop"
-      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
-      overlapping_bars size A3
-    end
-
-    sequencediagram 174620 "Seq: loop(Render&ANativeWindow)"
       show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
       overlapping_bars size A3
     end
@@ -424,6 +419,30 @@ format 75
 
     classinstance 129180 ""
       type class_ref 128540 // NuPlayerDriver
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 135708 ""
+      type class_ref 129308 // ACodec
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 135836 ""
+      type class_ref 170652 // ANativeWindow
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 135964 ""
+      type class_ref 128412 // AudioOuptput
       attributes
         end
       relations
