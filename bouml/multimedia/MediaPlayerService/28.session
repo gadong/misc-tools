@@ -1,14 +1,12 @@
 window_sizes 1680 988 290 1054 766 0
 diagrams
-  active  sequencediagram_ref 154908 // Seq: loop
+  active  classdiagram_ref 128284 // Class Org: NuPlayer
     1384 914 100 3 0 0
 end
 show_stereotypes
-selected sequencediagram_ref 154908 // Seq: loop
+selected classview_ref 148124 // libstagefright
 open
   classview_ref 128028 // Overview
-  classview_ref 134556 // NuPlayer
   classview_ref 134684 // MPS
-  classview_ref 134812 // Misc
 end
 end

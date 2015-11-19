@@ -46,6 +46,9 @@ note 130332 "media"
   color lightmediumgreen  xyzwh 491 252 0 201 139
 note 130460 "systemUI"
   color lightmagenta  xyzwh 488 94 0 205 119
+note 130588 "Telecom: 
+	      system_server  AndroidManifest.xml   android:process=\"system\" "
+  xyzwh 508 450 2000 383 97
 relationcanvas 128412 relation_ref 128028 // <association>
   from ref 128156 z 2001 to ref 128028
   no_role_a no_role_b
