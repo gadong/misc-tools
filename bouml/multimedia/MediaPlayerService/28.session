@@ -4,9 +4,9 @@ diagrams
     1384 914 100 3 0 0
 end
 show_stereotypes
-selected classview_ref 148124 // libstagefright
+selected 
+  package_ref 129 // MediaPlayerService
 open
-  classview_ref 128028 // Overview
   classview_ref 134684 // MPS
 end
 end
