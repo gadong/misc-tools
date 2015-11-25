@@ -1,14 +1,16 @@
 window_sizes 1680 988 253 1421 700 82
 diagrams
-  active  classdiagram_ref 134684 // Org
+  classdiagram_ref 134684 // Org
     1421 832 100 3 0 0
+  active  componentdiagram_ref 141212 // Org
+    1421 830 100 3 0 0
 end
 show_stereotypes
-selected class_ref 135964 // SonyAudioEffect
+selected 
+  package_ref 134556 // semcaudioeffect
 open
   classview_ref 134812 // Overview
   classview_ref 134556 // audioeffect
-  classview_ref 134684 // components
-  classview_ref 134940 // Java
+  componentview_ref 128028 // Component OverView
 end
 end

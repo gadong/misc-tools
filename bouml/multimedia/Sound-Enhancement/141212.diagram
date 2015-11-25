@@ -1,0 +1,49 @@
+format 75
+
+componentcanvas 128028 component_ref 128028 // Sound-Enhencement
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  xyzwh 341 170 2000 265 67
+end
+componentcanvas 128156 component_ref 128156 // SemcAudioEffect
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  xyzwh 173 364 2000 143 51
+end
+componentcanvas 128412 component_ref 128284 // AudioEffect FW
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  xyzwh 402 364 2000 143 51
+end
+componentcanvas 128668 component_ref 128412 // Walkman
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  xyzwh 52 179 2000 143 51
+end
+componentcanvas 129052 component_ref 128540 // SonyEffect Engine
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  xyzwh 402 507 2000 143 51
+end
+componentcanvas 129308 component_ref 128668 // SharedPreferences
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  xyzwh 647 363 2000 143 51
+end
+note 129564 "Intents:
+OPEN_AUDIO_EFFECT_CONTROL_SESSION
+CLOSE_AUDIO_EFFECT_CONTROL_SESSION"
+  xyzwh 130 103 2000 251 61
+simplerelationcanvas 128284 simplerelation_ref 128028
+  from ref 128028 z 2001 to ref 128156
+end
+simplerelationcanvas 128540 simplerelation_ref 128156
+  from ref 128156 z 2001 to ref 128412
+end
+simplerelationcanvas 128796 simplerelation_ref 128284
+  from ref 128668 z 2001 to ref 128028
+end
+simplerelationcanvas 128924 simplerelation_ref 128412
+  from ref 128028 z 2001 to ref 128412
+end
+simplerelationcanvas 129180 simplerelation_ref 128540
+  from ref 128412 z 2001 to ref 129052
+end
+simplerelationcanvas 129436 simplerelation_ref 128668
+  from ref 128028 z 2001 to ref 129308
+end
+end

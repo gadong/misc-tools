@@ -1,6 +1,6 @@
 format 75
 "Sound-Enhancement"
-  revision 3
+  revision 5
   modified_by 28 ""
 
 
@@ -91,7 +91,6 @@ format 75
 	    classrelation_ref 135708 // <unidirectional association>
 	  b parent class_ref 135964 // SonyAudioEffect
       end
-
     end
 
     class 134684 "AudioEffectSessionHolder"
@@ -196,6 +195,12 @@ format 75
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 142748 // <unidirectional association>
+	relation 142364 --->
+	  a role_name "" private
+	    classrelation_ref 142748 // <unidirectional association>
+	  b parent class_ref 135324 // SoundEnhancementService
+      end
     end
 
     class 135324 "SoundEnhancementService"
@@ -267,4 +272,59 @@ format 75
   end
 
   package_ref 134556 // semcaudioeffect
+
+  componentview 128028 "Component OverView"
+    //component diagram settings
+    package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    componentdiagram 141212 "Org"
+      package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+      draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+      size A3
+    end
+
+    component 128028 "Sound-Enhencement"
+      simplerelation 128028
+	-_->
+	  on component_ref 128156 // SemcAudioEffect
+      end
+
+      simplerelation 128412
+	-_->
+	  on component_ref 128284 // AudioEffect FW
+      end
+
+      simplerelation 128668
+	-_->
+	  on component_ref 128668 // SharedPreferences
+      end
+    end
+
+    component 128156 "SemcAudioEffect"
+      simplerelation 128156
+	-_->
+	  on component_ref 128284 // AudioEffect FW
+      end
+    end
+
+    component 128284 "AudioEffect FW"
+      simplerelation 128540
+	-_->
+	  on component_ref 128540 // SonyEffect Engine
+      end
+    end
+
+    component 128412 "Walkman"
+      simplerelation 128284
+	-_->
+	  on component_ref 128028 // Sound-Enhencement
+      end
+    end
+
+    component 128540 "SonyEffect Engine"
+    end
+
+    component 128668 "SharedPreferences"
+    end
+  end
 end
