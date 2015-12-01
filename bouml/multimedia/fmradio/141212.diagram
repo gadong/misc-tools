@@ -1,131 +1,166 @@
 format 75
 
-classcanvas 128028 class_ref 134556 // AudioHandler
+classcanvas 128028 class_ref 155036 // MediaRecorder
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 280 301 2000
+  color magenta
+  xyz 58 109 4005
 end
-classcanvas 128156 class_ref 134684 // FmRadioTuner
+classcanvas 128156 class_ref 162460 // MediaPlayerService
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 716 128 2000
+  color mediumgreen
+  xyz 44 176 4005
 end
-classcanvas 128284 class_ref 134812 // FmService
+classcanvas 128412 class_ref 161564 // AudioRecord
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 530 381 2000
+  color mediumgreen
+  xyz 64 243 2000
 end
-classcanvas 128412 class_ref 134940 // BtAudioHandler
+classcanvas 128540 class_ref 161692 // AudioTrack
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyzwh 251 379 2000 149 43
+  color mediumgreen
+  xyz 228 246 2000
 end
-classcanvas 128540 class_ref 135068 // PhfHandler
+classcanvas 128668 class_ref 163100 // FMA2DPWriter
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 529 297 2000
+  color mediumgreen
+  xyz 219 177 2000
 end
-classcanvas 129180 class_ref 135196 // AudioListener
+classcanvas 129180 class_ref 162204 // AudioFlinger
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 274 215 2006
+  color mediumgreen
+  xyz 139 344 2000
 end
-classcanvas 129436 class_ref 135324 // PhfListener
+classcanvas 129564 class_ref 162588 // AF::Track
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 525 217 2006
+  color mediumgreen
+  xyz 234 444 2000
 end
-classcanvas 129692 class_ref 141852 // Listener
+classcanvas 129692 class_ref 162716 // AF::RecordTrack
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 535 122 2006
+  color mediumgreen
+  xyz 53 443 2000
 end
-classcanvas 130332 class_ref 148380 // BroadcastReceiver
+classcanvas 130076 class_ref 162972 // primary
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 383 216 2012
+  color mediumgreen
+  xyz 79 527 2000
 end
-classcanvas 131228 class_ref 148508 // OnAudioFocusChangeListener
+classcanvas 130204 class_ref 162844 // a2dp
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 55 300 2000
+  color mediumgreen
+  xyz 245 527 2000
 end
-note 131740 "Events needs to be handled:
-1) Audio Focus Change
-2) BT Connection/Disconnection
-3) HS Connection/Disconnection
-4) FM Service Event"
-  xyzwh 59 101 2000 221 105
-note 131868 "1) BroadCast Intents
-Intent.ACTION_HEADSET_PLUG
-BluetoothA2dp.ACTION_CONNECTION_STATE_CHANGED
-2) CallBack Registration
-OnAudioFocusChangeListener(Audio Focus)
-OnStartedListener(fm-receiver)
-OnStateChangedListener(fm-receiver)
-OnScanListener(fm-receiver)
-OnRDSDataFoundListener(fm-receiver)
-OnSignalStrengthChangedListener(fm-receiver)
-OnPlayingInStereoListener(fm-receiver)
-
-"
-  xyzwh 445 437 2000 361 207
-note 132124 "PhfHandler
-1) Headset/Headphone Plug in/out
-2) BT Connect/Disconnect"
-  xyzwh 59 527 2000 225 71
-note 132252 "AudioHandler
-1) AudioFocus
-2) Speaker Force Use"
-  xyzwh 59 440 2000 159 71
-classcanvas 132380 class_ref 155036 // MediaRecorder
+classcanvas 130588 class_ref 162332 // AudioPolicyService
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 275 460 2000
+  color mediumgreen
+  xyz 371 344 2000
 end
-relationcanvas 128668 relation_ref 134556 // <dependency>
-  from ref 128284 z 2001 to ref 128540
+classcanvas 130844 class_ref 161820 // AudioSystem
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  color magenta
+  xyz 387 110 4005
+end
+classcanvas 130972 class_ref 161948 // AudioManager
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  color magenta
+  xyz 520 109 2000
+end
+classcanvas 131100 class_ref 162076 // AudioService
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  color magenta
+  xyz 524 177 2000
+end
+note 131996 ""
+  xyzwh 33 32 2000 141 51
+classcanvas 132252 class_ref 134940 // BtAudioHandler
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  color magenta
+  xyz 56 38 2006
+end
+note 132764 ""
+  xyzwh 32 163 1995 467 413
+note 132892 ""
+  xyzwh 32 96 1990 597 59
+note 133020 ""
+  xyzwh 505 163 1995 125 61
+note 133148 "Fm App[Process]
+SDK
+Media Server[Process]
+System Server[Process]"
+  xyzwh 215 10 2000 171 79
+relationcanvas 128284 relation_ref 162076 // <unidirectional association>
+  from ref 128028 z 4006 to ref 128156
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 128796 relation_ref 134684 // <dependency>
-  from ref 128284 z 2001 to ref 128028
+relationcanvas 128796 relation_ref 162204 // <unidirectional association>
+  from ref 128156 z 2001 to ref 128668
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 128924 relation_ref 134812 // <dependency>
-  from ref 128284 z 2001 to ref 128412
+relationcanvas 129052 relation_ref 162460 // <unidirectional association>
+  from ref 128156 z 2001 to ref 128412
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129052 relation_ref 134940 // <dependency>
-  from ref 128284 z 2001 to ref 128156
+relationcanvas 129308 relation_ref 162588 // <unidirectional association>
+  decenter_begin 623
+  from ref 128412 z 2001 to ref 129180
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-line 129308 ---+ decenter_begin 569 decenter_end 527
-  from ref 129180 z 2007 to ref 128028
-line 129564 ---+
-  from ref 129436 z 2007 to ref 128540
-line 129820 ---+ decenter_begin 610
-  from ref 129692 z 2007 to ref 128156
-relationcanvas 130076 relation_ref 141596 // <realization>
-  decenter_begin 490
-  from ref 129692 z 2007 to ref 129436
+relationcanvas 129436 relation_ref 162716 // <unidirectional association>
+  from ref 128540 z 2001 to ref 129180
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 130204 relation_ref 141724 // <realization>
-  from ref 129692 z 2007 to ref 129180
+relationcanvas 129820 relation_ref 162844 // <unidirectional association>
+  from ref 129180 z 2001 to ref 129692
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 131100 relation_ref 148508 // <generalisation>
-  from ref 128540 z 2013 to ref 130332
+relationcanvas 129948 relation_ref 162972 // <unidirectional association>
+  from ref 129180 z 2001 to ref 129564
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 131612 relation_ref 148892 // <composition>
-  from ref 128028 z 2001 to ref 131228
+relationcanvas 130332 relation_ref 163100 // <unidirectional association>
+  from ref 129692 z 2001 to ref 130076
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 132508 relation_ref 155420 // <composition>
-  from ref 128412 z 2001 to ref 132380
+relationcanvas 130460 relation_ref 163228 // <unidirectional association>
+  from ref 129564 z 2001 to ref 130204
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 132636 relation_ref 155548 // <dependency>
-  from ref 128028 z 2001 to ref 128412
+relationcanvas 130716 relation_ref 163356 // <unidirectional association>
+  from ref 130588 z 2001 to ref 129180
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131228 relation_ref 163484 // <unidirectional association>
+  from ref 130972 z 2001 to ref 131100
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131356 relation_ref 163612 // <unidirectional association>
+  from ref 130844 z 4006 to ref 130588
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131868 relation_ref 163740 // <unidirectional association>
+  from ref 131100 z 4006 to ref 130844
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 132380 relation_ref 155420 // <composition>
+  from ref 132252 z 4012 to ref 128028
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 132508 relation_ref 163868 // <unidirectional association>
+  from ref 128668 z 2001 to ref 128540
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end

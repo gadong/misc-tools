@@ -7,5 +7,6 @@ show_stereotypes
 selected classview_ref 141340 // com.android.server.telecom
 open
   classview_ref 134556 // UC-Ring
+  classview_ref 141212 // com.android.systemui.media
 end
 end
