@@ -1,15 +1,20 @@
 format 75
 
-note 128028 "Device:	/dev/radio0
+note 128028 "[Common]
+Device:	/dev/radio0
+App:	 com.sonyericsson.fmradio, (vendor/semc/fm-radio)
+Framework:	com.stericsson.hardware.fm.FmReceiverService, (frameworks/base/fmradio)
 
+[Yukon & WuKong]
 Driver:	(kernel/drivers/media/radio/radio-iris-transport.c)
-
 HAL:	(hardware/libhardware)
         libfmradio.sony-iris, (vendor/semc/hardware/libfmradio-sony-iris)
 
-Framework:	com.stericsson.hardware.fm.FmReceiverService, (frameworks/base/fmradio)
+[Shinano-R2]
+Driver:	vendor/broadcom/v4l2-driver/v4l2_fm_driver
+HAL:	vendor/semc/hardware/libfmradio-sony-v4l2
 
-App:	 com.sonyericsson.fmradio, (vendor/semc/fm-radio)
+
 "
-  xyzwh 23 40 2000 507 367
+  xyzwh 24 39 2000 543 213
 end
