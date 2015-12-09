@@ -1,18 +1,18 @@
 format 75
 
 note 128028 "[Common]
-Device:	/dev/radio0
 App:	 com.sonyericsson.fmradio, (vendor/semc/fm-radio)
 Framework:	com.stericsson.hardware.fm.FmReceiverService, (frameworks/base/fmradio)
+Device:	/dev/radio0
 
 [Yukon & WuKong]
-Driver:	(kernel/drivers/media/radio/radio-iris-transport.c)
 HAL:	(hardware/libhardware)
         libfmradio.sony-iris, (vendor/semc/hardware/libfmradio-sony-iris)
+Driver:	(kernel/drivers/media/radio/radio-iris-transport.c)
 
 [Shinano-R2]
-Driver:	vendor/broadcom/v4l2-driver/v4l2_fm_driver
 HAL:	vendor/semc/hardware/libfmradio-sony-v4l2
+Driver:	vendor/broadcom/v4l2-driver/v4l2_fm_driver
 
 
 "
