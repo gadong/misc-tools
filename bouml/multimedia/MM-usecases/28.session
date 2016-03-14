@@ -1,12 +1,19 @@
-window_sizes 1680 988 256 1313 700 82
+window_sizes 1680 988 256 1313 735 179
 diagrams
-  active  classdiagram_ref 128028 // Ring
-    1418 830 100 3 0 0
+  active  classdiagram_ref 134556 // Settings
+    1418 733 100 3 0 0
 end
 show_stereotypes
-selected classview_ref 141340 // com.android.server.telecom
+selected classdiagram_ref 134556 // Settings
 open
   classview_ref 134556 // UC-Ring
-  classview_ref 141212 // com.android.systemui.media
+  class_ref 135324 // NotificationSettings
+  classview_ref 141084 // android.media
+  class_ref 135580 // SeekBarVolumizer
+  classview_ref 148124 // android.provider
+  classview_ref 148380 // android.widget
+  class_ref 142748 // VC
+  classview_ref 148252 // com.android.server.audio
+  classview_ref 141340 // com.android.server.telecom
 end
 end

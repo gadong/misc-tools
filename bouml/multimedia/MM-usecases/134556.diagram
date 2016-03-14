@@ -1,87 +1,90 @@
 format 75
 
-classcanvas 128028 class_ref 128028 // Ringtone
+note 128028 "Settings"
+  color lightred  xyzwh 54 53 2000 251 169
+classcanvas 128156 class_ref 135324 // NotificationSettings
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 207 291 2000
+  xyz 125 90 2005
 end
-classcanvas 128156 class_ref 128156 // RingtoneManager
+classcanvas 128284 class_ref 135452 // VolumeSeekBarPreference
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 184 230 2000
+  xyz 103 156 2005
 end
-classcanvas 128284 class_ref 128284 // MediaPlayer
+classcanvas 128540 class_ref 135580 // SeekBarVolumizer
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 198 366 2000
+  xyz 328 155 2000
 end
-classcanvas 128668 class_ref 128540 // RingtonePlayer
+classcanvas 128796 class_ref 135708 // AudioManager
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 534 137 2000
+  xyz 452 272 2000
 end
-classcanvas 128796 class_ref 128412 // AudioService
+classcanvas 129052 class_ref 128412 // AudioService
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 540 290 2000
+  xyz 456 384 2000
 end
-classcanvas 129308 class_ref 128668 // Ringer
+classcanvas 129564 class_ref 136092 // SeekBar
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 213 43 2005
+  xyz 356 88 2000
 end
-classcanvas 129436 class_ref 128796 // AsyncRingtonePlayer
+classcanvas 129948 class_ref 135964 // VolumeDialogController
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 174 102 2010
+  xyz 638 160 2000
 end
-note 129820 "Gits: 
-packages/services/Telecomm/src/com/android/server/telecom/
-frameworks/base/media/java/android/media/
-frameworks/base/packages/SystemUI
-
-Loop:
-Auto Loop:  Meta Info:  ANDROID_LOOP , kKeyAutoLoop
-Loop by AsyncRingtonePlayer
-"
-  xyzwh 124 451 2000 343 141
-note 130076 "server.telecom"
-  color lightmediumgreen  xyzwh 119 24 2000 235 153
-note 130204 "media"
-  xyzwh 127 216 0 231 195
-note 130332 "server.media"
-  color lightmediumgreen  xyzwh 491 252 0 201 139
-note 130460 "systemUI"
-  color lightmagenta  xyzwh 488 94 0 205 119
-note 130588 "Telecom: 
-	      system_server  AndroidManifest.xml   android:process=\"system\" "
-  xyzwh 508 451 2000 407 207
-relationcanvas 128412 relation_ref 128028 // <association>
-  from ref 128156 z 2001 to ref 128028
+classcanvas 130076 class_ref 142748 // VC
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 687 221 2000
+end
+classcanvas 130204 class_ref 142876 // IVolumeController
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 653 278 2000
+end
+note 131356 "SystemUI"
+  xyzwh 615 111 2000 205 235
+relationcanvas 128412 relation_ref 135324 // <directional composition>
+  from ref 128156 z 2006 to ref 128284
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 128540 relation_ref 128156 // <association>
-  from ref 128028 z 2001 to ref 128284
+relationcanvas 129180 relation_ref 135708 // <dependency>
+  from ref 128796 z 2001 to ref 129052
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 128924 relation_ref 128284 // <association>
-  from ref 128028 z 2001 to ref 128796
+relationcanvas 129308 relation_ref 135836 // <association>
+  from ref 128284 z 2006 to ref 128540
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129052 relation_ref 128412 // <association>
-  from ref 128028 z 2001 to ref 128668
+relationcanvas 129436 relation_ref 135964 // <dependency>
+  from ref 128540 z 2001 to ref 128796
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129180 relation_ref 128540 // <association>
-  from ref 128668 z 2001 to ref 128796
+relationcanvas 129692 relation_ref 136092 // <dependency>
+  from ref 128284 z 2006 to ref 129564
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129564 relation_ref 128668 // <association>
-  from ref 129308 z 2006 to ref 129436
+relationcanvas 129820 relation_ref 136220 // <dependency>
+  from ref 128540 z 2001 to ref 129564
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129692 relation_ref 128796 // <association>
-  from ref 129436 z 2006 to ref 128156
+relationcanvas 130332 relation_ref 142748 // <generalisation>
+  from ref 130076 z 2001 to ref 130204
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
+relationcanvas 130460 relation_ref 142876 // <association>
+  from ref 129948 z 2001 to ref 130076
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131100 relation_ref 143260 // <dependency>
+  from ref 129948 z 2001 to ref 128796
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+line 131228 -_-_
+  from ref 129052 z 2001 to ref 130204
 end
