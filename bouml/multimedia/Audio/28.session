@@ -1,15 +1,20 @@
-window_sizes 1350 840 337 1007 646 120
+window_sizes 1680 988 337 1007 646 120
 diagrams
-  classdiagram_ref 128028 // MixerThread
-    805 516 100 3 0 0
-  active  classdiagram_ref 134556 // AudioTrack
-    1007 647 100 4 0 0
+  classdiagram_ref 141084 // NBAIO
+    1065 635 100 3 0 0
+  classdiagram_ref 128028 // FastMixer
+    1065 635 100 3 0 0
+  active  classdiagram_ref 141212 // MixerThread-Buffers
+    1337 794 100 3 0 0
+  classdiagram_ref 134556 // AudioTrack
+    1065 635 100 3 0 0
 end
 show_stereotypes
-selected classdiagram_ref 134556 // AudioTrack
+selected classdiagram_ref 141212 // MixerThread-Buffers
 open
-  classview_ref 128028 // audioflinger
-  classview_ref 128156 // media
+  classview_ref 134812 // diagrams
+  class_ref 128156 // MonoPipeReader
+  class_ref 128412 // NBAIO_Sink
   classview_ref 128284 // system-core
 end
 end
