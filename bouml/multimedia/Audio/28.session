@@ -4,17 +4,20 @@ diagrams
     1065 635 100 3 0 0
   classdiagram_ref 128028 // FastMixer
     1065 635 100 3 0 0
-  active  classdiagram_ref 141212 // MixerThread-Buffers
-    1337 794 100 3 0 0
   classdiagram_ref 134556 // AudioTrack
     1065 635 100 3 0 0
+  active  objectdiagram_ref 147740 // MixerThread-Buffers
+    1337 792 100 3 0 0
 end
 show_stereotypes
-selected classdiagram_ref 141212 // MixerThread-Buffers
+selected class_ref 130588 // AudioMixer
 open
   classview_ref 134812 // diagrams
+  class_ref 128028 // MonoPipe
   class_ref 128156 // MonoPipeReader
   class_ref 128412 // NBAIO_Sink
+  class_ref 128668 // AudioStreamOutSink
+  classview_ref 128028 // audioflinger
   classview_ref 128284 // system-core
 end
 end

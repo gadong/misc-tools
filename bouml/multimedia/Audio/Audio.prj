@@ -1,6 +1,6 @@
 format 75
 "Audio"
-  revision 5
+  revision 6
   modified_by 28 ""
 
 
@@ -69,9 +69,73 @@ format 75
       size A3
     end
 
-    classdiagram 141212 "MixerThread-Buffers"
-      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    objectdiagram 147740 "MixerThread-Buffers"
+       write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
       size A3
+    end
+
+    classinstance 128028 ""
+      type class_ref 143644 // Track
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128156 ""
+      type class_ref 143644 // Track
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128284 ""
+      type class_ref 143772 // MEMBUFFER
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128412 ""
+      type class_ref 143772 // MEMBUFFER
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128540 ""
+      type class_ref 143772 // MEMBUFFER
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128668 ""
+      type class_ref 143772 // MEMBUFFER
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128796 ""
+      type class_ref 129564 // MixerThread
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128924 ""
+      type class_ref 130588 // AudioMixer
+      attributes
+        end
+      relations
+        end
     end
   end
 
@@ -463,6 +527,50 @@ format 75
     end
 
     class 130588 "AudioMixer"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 143644 "Track"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 143772 "MEMBUFFER"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 143900 "EffectChain"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 144028 "EffectModule"
       visibility package 
       cpp_decl ""
       java_decl ""

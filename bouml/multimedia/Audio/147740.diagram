@@ -1,0 +1,58 @@
+format 75
+
+note 128028 "MixerThread Buffers:
+1) mEffectBuffer
+2) mMixerBuffer
+3) mSinkBuffer
+
+Track
+1) mMainBuffer: initialized as the thread's sinkBuffer, if there is a effectchain, then the chain's input buffer. 
+
+EffectChain
+1) mInBuffer
+2) mOutBuffer
+
+EffectModule
+1) inBuffer
+2) outBuffer
+
+AudioMixer
+"
+  xyzwh 8 6 2000 597 273
+classinstancecanvas 128156 classinstance_ref 128028 // 
+  xyz 226 322 2000
+end
+classinstancecanvas 128284 classinstance_ref 128156 // 
+  xyz 260 569 2000
+end
+classinstancecanvas 128412 classinstance_ref 128284 // 
+  xyz 517 323 2000
+end
+classinstancecanvas 128540 classinstance_ref 128412 // 
+  xyz 400 496 2000
+end
+classinstancecanvas 128924 classinstance_ref 128540 // 
+  xyz 125 505 2000
+end
+classinstancecanvas 129052 classinstance_ref 128668 // 
+  xyz 105 389 2000
+end
+classinstancecanvas 129436 classinstance_ref 128796 // 
+  xyz 725 500 2000
+end
+classinstancecanvas 129564 classinstance_ref 128924 // 
+  xyz 270 455 2000
+end
+line 128668 -_-_
+  from ref 128284 z 2001 to ref 128540
+line 128796 -_-_
+  from ref 128156 z 2001 to ref 128412
+line 129180 -_-_
+  from ref 129052 z 2001 to ref 128156
+line 129308 -_-_
+  from ref 128924 z 2001 to ref 128284
+line 129692 -_-_
+  from ref 128924 z 2001 to ref 129564
+line 129820 -_-_
+  from ref 129564 z 2001 to ref 128540
+end
