@@ -2,57 +2,86 @@ format 75
 
 classcanvas 128028 class_ref 128284 // NBAIO_Port
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 397 109 2000
+  xyz 314 109 2000
 end
 classcanvas 128156 class_ref 128412 // NBAIO_Sink
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 267 179 2000
+  xyz 184 179 2000
 end
 classcanvas 128284 class_ref 128540 // NBAIO_Source
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 481 177 2000
+  xyz 398 177 2000
 end
 classcanvas 128412 class_ref 128668 // AudioStreamOutSink
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 99 256 2000
+  xyz 16 256 2000
 end
 classcanvas 128540 class_ref 128028 // MonoPipe
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 378 260 2000
+  xyz 295 260 2000
 end
 classcanvas 129180 class_ref 128156 // MonoPipeReader
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 476 257 2006
+  xyz 393 257 2006
 end
 classcanvas 129692 class_ref 129180 // SourceAudioBufferProvider
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 637 178 2012
+  xyz 554 178 2012
 end
 classcanvas 129948 class_ref 129052 // ExtendedAudioBufferProvider
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 631 108 2000
+  xyz 548 108 2000
 end
 classcanvas 130588 class_ref 128924 // AudioBufferProvider
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 659 35 2000
+  xyz 576 35 2000
 end
 classcanvas 130844 class_ref 129820 // FastTrack
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 686 415 2018
+  xyz 603 415 2018
 end
 classcanvas 131612 class_ref 130204 // FastMixerState
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 115 415 2024
+  xyz 32 415 2024
 end
 classcanvas 131996 class_ref 129564 // MixerThread
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 370 344 3005
+  xyz 287 344 3005
 end
 note 132380 "MixerThread:
-1) mNormalSink: if fast Mixer then point to mPipeSink, others mOutputSink
-2) mOutputSink
-3) mPipeSink"
-  xyzwh 77 527 2000 449 81
+        1) mNormalSink: if fast Mixer then point to mPipeSink, others mOutputSink
+        2) mOutputSink
+        3) mPipeSink
+
+
+MixerThread
+        mSinkBuffer
+        mMixerBuffer
+        mEffectBuffer
+
+Track
+        cblk: share mem between AT & AF
+        mMainBuffer: 
+                If Track attached with Effect, then the EffectChain's InBuffer
+                Others, the Thread's SinkBuffer
+
+EffectChain
+        mInBuffer: 
+                session > 0, if not DirectPlaybackThread, then thread new a Buffer for the Chain
+                 Others, set to Thread's EffectBuffer
+        mOutBuffer: All chain's output buffer are set to MixerThread's EffectBuffer.
+
+EffectModule
+        inBuffer
+        outBuffer
+
+AudioMixer::track_t
+        bufferProvider: The Track
+        mainBuffer:  The output buffer used by the AudioMixer
+                Track's MainBuffer is set to SinkBuffer or MixerBuffer, then MixerBuffer
+                Others, Track's mainBuffer(), that's EffectChain's InBuffer.
+"
+  xyzwh 34 473 2000 509 509
 relationcanvas 128668 relation_ref 136604 // <generalisation>
   from ref 128412 z 2001 to ref 128156
   no_role_a no_role_b
@@ -100,27 +129,27 @@ relationcanvas 130716 relation_ref 137756 // <generalisation>
 end
 relationcanvas 131228 relation_ref 137884 // <directional aggregation>
   from ref 130844 z 2019 to ref 129692
-  role_a_pos 730 223 3000 no_role_b
+  role_a_pos 647 223 3000 no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 131740 relation_ref 129052 // <directional aggregation>
   from ref 131612 z 2025 to ref 130844
-  role_a_pos 603 414 3000 no_role_b
+  role_a_pos 520 414 3000 no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 131868 relation_ref 138140 // <directional aggregation>
   from ref 131612 z 2025 to ref 128412
-  role_a_pos 174 301 3000 no_role_b
+  role_a_pos 91 301 3000 no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 132124 relation_ref 129692 // <directional aggregation>
   from ref 131996 z 3006 to ref 128412
-  role_a_pos 230 277 3000 no_role_b
+  role_a_pos 147 277 3000 no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 132252 relation_ref 129820 // <directional aggregation>
   from ref 131996 z 3006 to ref 128540
-  role_a_pos 422 305 3000 no_role_b
+  role_a_pos 339 305 3000 no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 end

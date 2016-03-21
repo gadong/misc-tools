@@ -41,7 +41,7 @@ classinstancecanvas 129436 classinstance_ref 128796 //
   xyz 725 500 2000
 end
 classinstancecanvas 129564 classinstance_ref 128924 // 
-  xyz 270 455 2000
+  xyz 243 445 2000
 end
 line 128668 -_-_
   from ref 128284 z 2001 to ref 128540

@@ -1,14 +1,4 @@
-window_sizes 1680 988 337 1007 646 120
-diagrams
-  classdiagram_ref 141084 // NBAIO
-    1065 635 100 3 0 0
-  classdiagram_ref 128028 // FastMixer
-    1065 635 100 3 0 0
-  classdiagram_ref 134556 // AudioTrack
-    1065 635 100 3 0 0
-  active  objectdiagram_ref 147740 // MixerThread-Buffers
-    1337 792 100 3 0 0
-end
+window_sizes 1680 988 337 1007 877 35
 show_stereotypes
 selected class_ref 130588 // AudioMixer
 open
