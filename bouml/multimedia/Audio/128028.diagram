@@ -46,7 +46,7 @@ classcanvas 132764 class_ref 129436 // FastThread
 end
 classcanvas 133532 class_ref 129180 // SourceAudioBufferProvider
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 590 333 2005
+  xyz 591 342 2005
 end
 classcanvas 133660 class_ref 129820 // FastTrack
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
@@ -60,6 +60,11 @@ classcanvas 134428 class_ref 128540 // NBAIO_Source
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyz 443 342 2000
 end
+note 135068 "MixerThread(fast Mixer)
+        1) NormalMixer output data to pipe sink
+        2) FastMixer get data from pipe source
+        3) FastMixer write data to HAL Sink(AudioStreamOutSink)"
+  xyzwh 43 529 2000 359 81
 relationcanvas 129180 relation_ref 128284 // <generalisation>
   from ref 128284 z 2001 to ref 128412
   no_role_a no_role_b
@@ -112,7 +117,7 @@ relationcanvas 133404 relation_ref 137116 // <dependency>
 end
 relationcanvas 133788 relation_ref 137884 // <directional aggregation>
   from ref 133660 z 2011 to ref 133532
-  role_a_pos 684 312 3000 no_role_b
+  role_a_pos 684 321 3000 no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 134044 relation_ref 129052 // <directional aggregation>

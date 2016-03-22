@@ -1,6 +1,12 @@
 window_sizes 1680 988 337 1007 877 35
+diagrams
+  active  classdiagram_ref 128028 // FastMixer
+    1337 877 100 3 0 0
+  classdiagram_ref 141084 // NBAIO
+    1065 701 100 3 252 0
+end
 show_stereotypes
-selected class_ref 130588 // AudioMixer
+selected classdiagram_ref 128028 // FastMixer
 open
   classview_ref 134812 // diagrams
   class_ref 128028 // MonoPipe
