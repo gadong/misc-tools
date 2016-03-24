@@ -1,6 +1,6 @@
 format 75
 "MediaPlayerService"
-  revision 36
+  revision 37
   modified_by 28 ""
 
 
@@ -305,6 +305,14 @@ format 75
 	    classrelation_ref 186268 // <generalisation>
 	  b parent class_ref 191900 // Nuplayer::Source
       end
+
+      classrelation 192796 // <association>
+	relation 187036 ----
+	  a role_name "" private
+	    classrelation_ref 192796 // <association>
+	  b role_name "" private
+	    classrelation_ref 192924 // <association>
+      end
     end
 
     class 184860 "Track"
@@ -447,6 +455,40 @@ format 75
         end
       relations
         end
+    end
+
+    class 205212 "HTTPLiveSource"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 193052 // <generalisation>
+	relation 187164 ---|>
+	  a public
+	    classrelation_ref 193052 // <generalisation>
+	  b parent class_ref 191900 // Nuplayer::Source
+      end
+    end
+
+    class 205340 "RTSPSource"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 193180 // <generalisation>
+	relation 187292 ---|>
+	  a public
+	    classrelation_ref 193180 // <generalisation>
+	  b parent class_ref 191900 // Nuplayer::Source
+      end
     end
   end
 
@@ -1279,6 +1321,14 @@ format 75
       classrelation 138524 // <association>
 	relation_ref 136860 // <association>
       end
+
+      classrelation 193308 // <association>
+	relation 187420 ----
+	  a role_name "" private
+	    classrelation_ref 193308 // <association>
+	  b role_name "" private
+	    classrelation_ref 193436 // <association>
+      end
     end
 
     class 150684 "Mp3Extractor"
@@ -1368,6 +1418,14 @@ format 75
       
       classrelation 137756 // <association>
 	relation_ref 136476 // <association>
+      end
+
+      classrelation 192924 // <association>
+	relation_ref 187036 // <association>
+      end
+
+      classrelation 193436 // <association>
+	relation_ref 187420 // <association>
       end
     end
 

@@ -1,34 +1,34 @@
 format 75
 
 classinstance 128028 class_ref 128028 // MediaApp
-  name ""   xyz 7.10358 4.8 2000 life_line_z 2000
+  name ""   xyz 7.15358 4.65 2000 life_line_z 2000
 classinstance 128156 class_ref 128156 // MediaPlayer
-  name ""   xyz 83.8407 4.8 2000 life_line_z 2000
+  name ""   xyz 84.0407 4.65 2000 life_line_z 2000
 classinstance 128284 class_ref 128284 // Client
-  name ""   xyz 191.301 4.72586 2000 life_line_z 2000
+  name ""   xyz 191.051 4.57586 2000 life_line_z 2000
 classinstance 128412 class_ref 128412 // AudioOuptput
-  name ""   xyz 277.23 4.7 2000 life_line_z 2000
+  name ""   xyz 277.28 4.55 2000 life_line_z 2000
 classinstance 128540 class_ref 128540 // NuPlayerDriver
-  name ""   xyz 394.251 4.8 2000 life_line_z 2000
+  name ""   xyz 394.351 4.65 2000 life_line_z 2000
 classinstance 128668 class_ref 128668 // NuPlayer
-  name ""   xyz 499.838 4.8 2000 life_line_z 2000
+  name ""   xyz 499.388 4.65 2000 life_line_z 2000
 classinstance 128796 class_ref 129052 // GenericSource
-  name ""   xyz 574.036 4.8 2000 life_line_z 2000
+  name ""   xyz 574.136 4.65 2000 life_line_z 2000
 classinstance 128924 class_ref 128796 // NuPlayer::Render
-  name ""   xyz 674.886 4.8 2000 life_line_z 2000
+  name ""   xyz 675.386 4.65 2000 life_line_z 2000
 classinstance 129052 class_ref 128924 // NuPlayer::Decoder
-  name ""   xyz 792.693 5.39438 2000 life_line_z 2000
+  name ""   xyz 793.243 5.29438 2000 life_line_z 2000
 durationcanvas 129180 classinstance_ref 128028 // :MediaApp
   color mediumgreen
   xyzwh 36 56.3 2010 11 461
 end
 durationcanvas 129308 classinstance_ref 128156 // :MediaPlayer
   color mediumgreen
-  xyzwh 118 57.45 2010 11 25
+  xyzwh 119 57.45 2010 11 25
 end
 durationcanvas 129564 classinstance_ref 128156 // :MediaPlayer
   color mediumgreen
-  xyzwh 118 86.6 2010 11 412
+  xyzwh 119 85.55 2010 11 412
 end
 durationcanvas 129820 classinstance_ref 128284 // :Client
   color mediumyellow
@@ -52,7 +52,7 @@ durationcanvas 131100 classinstance_ref 128412 // :AudioOuptput
 end
 durationcanvas 131868 classinstance_ref 128540 // :NuPlayerDriver
   color mediumyellow
-  xyzwh 437 232.75 2010 11 46
+  xyzwh 437 231.7 2010 11 46
 end
 durationcanvas 132124 classinstance_ref 128540 // :NuPlayerDriver
   color mediumyellow
@@ -60,10 +60,10 @@ durationcanvas 132124 classinstance_ref 128540 // :NuPlayerDriver
 end
 durationcanvas 132380 classinstance_ref 128668 // :NuPlayer
   color mediumyellow
-  xyzwh 526 318.5 2010 11 144
+  xyzwh 526 318.45 2010 11 144
   overlappingdurationcanvas 133148
     color red
-    xyzwh 532 412.6 2020 11 40
+    xyzwh 532 411.55 2020 11 40
   end
 end
 durationcanvas 132636 classinstance_ref 128796 // :GenericSource

@@ -50,7 +50,7 @@ classcanvas 130204 class_ref 129180 // MediaCodec
 end
 classcanvas 130460 class_ref 150556 // MediaExtractor
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 567 484 2000
+  xyz 567 571 2000
 end
 classcanvas 130588 class_ref 150300 // FileSource
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
@@ -62,7 +62,7 @@ classcanvas 130716 class_ref 150172 // DataSource
 end
 classcanvas 131228 class_ref 150684 // Mp3Extractor
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 572 400 2005
+  xyz 571 486 2005
 end
 classcanvas 131484 class_ref 150812 // Mp3Source
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
@@ -92,7 +92,7 @@ note 135068 "1) prepare
          instantiateDecoder(Audio): new Decoder, init, configure
          instantiateDecoder(Video): new Decoder, init, configure
 "
-  xyzwh 415 577 2000 473 147
+  xyzwh 411 668 2000 473 147
 classcanvas 135196 class_ref 170652 // ANativeWindow
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyz 48 582 2000
@@ -111,7 +111,15 @@ note 136220 "ANativeWindow:
   xyzwh 78 657 2000 281 67
 classcanvas 136348 class_ref 191900 // Nuplayer::Source
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 563 233 2000
+  xyz 563 231 2000
+end
+classcanvas 137372 class_ref 205212 // HTTPLiveSource
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 713 319 2000
+end
+classcanvas 137500 class_ref 205340 // RTSPSource
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 720 231 2000
 end
 relationcanvas 129052 relation_ref 128028 // <composition>
   from ref 128156 z 2001 to ref 128028
@@ -263,6 +271,26 @@ relationcanvas 136476 relation_ref 180508 // <generalisation>
 end
 relationcanvas 137116 relation_ref 128796 // <association>
   from ref 128540 z 2011 to ref 128284
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 137244 relation_ref 187036 // <association>
+  from ref 128924 z 2006 to ref 130716
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 137628 relation_ref 187164 // <generalisation>
+  from ref 137372 z 2001 to ref 136348
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 137756 relation_ref 187292 // <generalisation>
+  from ref 137500 z 2001 to ref 136348
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 137884 relation_ref 187420 // <association>
+  from ref 131484 z 2011 to ref 130716
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
