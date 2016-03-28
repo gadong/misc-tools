@@ -1,19 +1,15 @@
-window_sizes 1373 907 337 1030 703 130
+window_sizes 1680 988 337 1030 703 130
 diagrams
   sequencediagram_ref 128156 // mtp-init
     1030 703 120 3 0 0
-  classdiagram_ref 134684 // Overview
-    1030 703 100 3 0 0
   sequencediagram_ref 141212 // pc-2-phone
     824 562 120 3 0 0
   active  sequencediagram_ref 147740 // phone-2-pc
-    1030 703 100 4 0 0
+    1337 784 100 4 0 0
 end
 show_stereotypes
-selected sequencediagram_ref 147740 // phone-2-pc
+selected classdiagram_ref 134684 // Overview
 open
   class_ref 135836 // USB_Driver
-  classdiagram_ref 134684 // Overview
-  sequencediagram_ref 141212 // pc-2-phone
 end
 end

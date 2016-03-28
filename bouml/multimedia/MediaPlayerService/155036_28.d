@@ -1,145 +1,146 @@
 format 75
 
-classcanvas 128028 class_ref 128156 // MediaProvider
+classcanvas 128028 class_ref 129436 // OMXCodec
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 340 98 2000
+  xyz 331 85 2000
 end
-classcanvas 128156 class_ref 128284 // MtpReceiver
+classcanvas 128156 class_ref 171036 // OMXCodecObserver
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 198 27 2000
+  xyz 121 86 2000
 end
-classcanvas 128284 class_ref 128412 // MtpService
+classcanvas 128412 class_ref 170908 // OMXObserver
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 201 97 2000
+  xyz 140 163 2000
 end
-classcanvas 128412 class_ref 128668 // MediaScannerService
+classcanvas 128796 class_ref 143132 // OMX
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 489 97 2000
+  xyz 347 249 2000
 end
-classcanvas 128540 class_ref 128540 // MediaScannerReceiver
+classcanvas 128924 class_ref 136604 // OMXNodeInstance
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 484 25 2000
+  xyz 127 345 2000
 end
-classcanvas 129052 class_ref 128796 // MediaScanner
+classcanvas 129308 class_ref 143388 // OMXMaster
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 510 184 2000
+  xyz 516 344 2000
 end
-classcanvas 129308 class_ref 128924 // MtpServer
+classcanvas 129436 class_ref 171292 // OMXPluginBase
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 202 185 2000
+  xyz 505 435 2000
 end
-classcanvas 129436 class_ref 129052 // MtpDatabase
+classcanvas 129820 class_ref 143516 // SoftOMXPlugin
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 342 185 2000
+  xyz 508 517 2000
 end
-classcanvas 129564 class_ref 129180 // MtpStorage
+classcanvas 129948 class_ref 171420 // QComOMXPlugin
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 58 185 2000
+  xyz 650 436 2000
 end
-classcanvas 130716 class_ref 135708 // MtpTransport
+classcanvas 130332 class_ref 171164 // CallbackDispatcher
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 195 264 2000
+  xyz 309 346 2005
 end
-classcanvas 130972 class_ref 135836 // USB_Driver
+classcanvas 130588 class_ref 171548 // OMX_CALLBACKTYPE
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 200 340 2000
+  xyz 302 437 2005
 end
-note 131228 "MediaProvider:  
-        packages/providers/MediaProvider
-
-Framework:
-        android.mtp, frameworks/base/media/java/android/media/mtp
-        libmedia_jni.so, frameworks/base/media/jni/
-        libmtp.so, frameworks/av/media/mtp
-
-Driver:
-        /dev/mtp_usb, drivers/usb/gadget/f_mtp.c
+classcanvas 131100 class_ref 171676 // OMX_COMPONENTTYPE
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 112 516 2010
+end
+classcanvas 131484 class_ref 143644 // SoftOMXComponent
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 307 517 2000
+end
+classcanvas 132252 class_ref 171804 // SoftMP3
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 340 587 2000
+end
+note 132636 "1) OMX  is instantiated in MPS
 "
-  xyzwh 35 400 2000 373 193
-note 131356 "MtpReceiver: 
-        UsbManager.ACTION_USB_STATE
-        USB_MTP Connection State Change
-        Start/Stop MtpService
-
-MediaScannerReceiver:
-        Intent.ACTION_MEDIA_MOUNTED
-        Intent.ACTION_MEDIA_SCANNER_SCAN_FILE
-        Start MediaScannerService
-"
-  xyzwh 424 402 2000 343 181
-note 131484 "3rd Party Apps: 
-For those 3rd party Apps, when they update add/remove content on storage, they should call MediaScanner to scan the change.
-"
-  xyzwh 456 253 2000 267 87
-relationcanvas 128668 relation_ref 128028 // <dependency>
-  from ref 128156 z 2001 to ref 128284
+  xyzwh 77 655 2000 229 39
+relationcanvas 128284 relation_ref 157724 // <association>
+  from ref 128156 z 2001 to ref 128028
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 128796 relation_ref 128156 // <dependency>
-  from ref 128028 z 2001 to ref 128284
+relationcanvas 128668 relation_ref 157852 // <generalisation>
+  from ref 128156 z 2001 to ref 128412
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 128924 relation_ref 128284 // <dependency>
-  from ref 128540 z 2001 to ref 128412
+relationcanvas 129052 relation_ref 157980 // <association>
+  from ref 128412 z 2001 to ref 128924
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129180 relation_ref 128412 // <dependency>
-  from ref 128412 z 2001 to ref 129052
+relationcanvas 129180 relation_ref 158108 // <association>
+  from ref 128924 z 2001 to ref 128796
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129692 relation_ref 128540 // <dependency>
-  from ref 128284 z 2001 to ref 129308
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 129820 relation_ref 128668 // <dependency>
-  from ref 128284 z 2001 to ref 129564
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 129948 relation_ref 128796 // <dependency>
-  from ref 128284 z 2001 to ref 129436
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 130076 relation_ref 128924 // <dependency>
-  from ref 129308 z 2001 to ref 129564
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 130204 relation_ref 129052 // <dependency>
+relationcanvas 129564 relation_ref 158236 // <generalisation>
   from ref 129308 z 2001 to ref 129436
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 130332 relation_ref 129180 // <dependency>
-  from ref 129436 z 2001 to ref 128028
+relationcanvas 129692 relation_ref 158364 // <association>
+  from ref 128796 z 2001 to ref 129308
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 130460 relation_ref 129308 // <dependency>
-  from ref 129052 z 2001 to ref 128028
+relationcanvas 130076 relation_ref 158492 // <generalisation>
+  from ref 129820 z 2001 to ref 129436
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 130588 relation_ref 129436 // <dependency>
-  from ref 129436 z 2001 to ref 129052
+relationcanvas 130204 relation_ref 158620 // <generalisation>
+  from ref 129948 z 2001 to ref 129436
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 130844 relation_ref 129564 // <dependency>
-  from ref 129308 z 2001 to ref 130716
+relationcanvas 130460 relation_ref 158748 // <association>
+  from ref 128796 z 2006 to ref 130332
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 131100 relation_ref 129692 // <dependency>
-  decenter_begin 493
-  decenter_end 481
-  from ref 130716 z 2001 to ref 130972
+relationcanvas 130972 relation_ref 159132 // <association>
+  from ref 130588 z 2006 to ref 128924
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131228 relation_ref 159260 // <association>
+  from ref 128924 z 2011 to ref 131100
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131612 relation_ref 159516 // <association>
+  from ref 131100 z 2011 to ref 131484
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131740 relation_ref 159644 // <association>
+  from ref 130588 z 2006 to ref 131484
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 132124 relation_ref 159772 // <association>
+  from ref 129820 z 2001 to ref 131484
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 132380 relation_ref 159900 // <generalisation>
+  from ref 132252 z 2001 to ref 131484
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 132764 relation_ref 160028 // <association>
+  from ref 128028 z 2001 to ref 128796
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 132892 relation_ref 166556 // <association>
+  from ref 128924 z 2006 to ref 130332
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end

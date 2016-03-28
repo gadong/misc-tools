@@ -1,145 +1,93 @@
 format 75
 
-classcanvas 128028 class_ref 128156 // MediaProvider
+classcanvas 128028 class_ref 184860 // Track
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 340 98 2000
+  xyz 270 44 2000
 end
-classcanvas 128156 class_ref 128284 // MtpReceiver
+classcanvas 128156 class_ref 129052 // GenericSource
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 198 27 2000
+  xyz 48 44 2000
 end
-classcanvas 128284 class_ref 128412 // MtpService
+classcanvas 128284 class_ref 150428 // MediaSource
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 201 97 2000
+  xyz 161 148 2000
 end
-classcanvas 128412 class_ref 128668 // MediaScannerService
+classcanvas 128412 class_ref 184988 // AnotherPacketSource
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 489 97 2000
+  xyz 327 147 2000
 end
-classcanvas 128540 class_ref 128540 // MediaScannerReceiver
+note 130204 "1) MP3 Source - > GenericSource : MediaBuffer
+2) GenericSource -> NuPlayerDecoder : ABuffer
+3) NuPlayerDecoder -> NuPlayerRender : 
+4) NuPlayerRender -> AudioOutput :  ABuffer"
+  xyzwh 40 321 2000 381 83
+classcanvas 130332 class_ref 150812 // Mp3Source
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 484 25 2000
+  xyz 167 235 2000
 end
-classcanvas 129052 class_ref 128796 // MediaScanner
-  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 510 184 2000
-end
-classcanvas 129308 class_ref 128924 // MtpServer
-  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 202 185 2000
-end
-classcanvas 129436 class_ref 129052 // MtpDatabase
-  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 342 185 2000
-end
-classcanvas 129564 class_ref 129180 // MtpStorage
-  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 58 185 2000
-end
-classcanvas 130716 class_ref 135708 // MtpTransport
-  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 195 264 2000
-end
-classcanvas 130972 class_ref 135836 // USB_Driver
-  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyz 200 340 2000
-end
-note 131228 "MediaProvider:  
-        packages/providers/MediaProvider
+note 130588 "AnotherPacketSource: 
+    As a asynchronized chnl between GenericSource MediaSource & NuPlayer::Decoder, 
+ 
+GenericSource::readBuffer(): 
+    1) read from MP3 Source, in MediaBuffer
+    2) convert from MediaBuffer to ABuffer, 
+    3) queue ABuffer to AnotherPackSource
 
-Framework:
-        android.mtp, frameworks/base/media/java/android/media/mtp
-        libmedia_jni.so, frameworks/base/media/jni/
-        libmtp.so, frameworks/av/media/mtp
-
-Driver:
-        /dev/mtp_usb, drivers/usb/gadget/f_mtp.c
-"
-  xyzwh 35 400 2000 373 193
-note 131356 "MtpReceiver: 
-        UsbManager.ACTION_USB_STATE
-        USB_MTP Connection State Change
-        Start/Stop MtpService
-
-MediaScannerReceiver:
-        Intent.ACTION_MEDIA_MOUNTED
-        Intent.ACTION_MEDIA_SCANNER_SCAN_FILE
-        Start MediaScannerService
-"
-  xyzwh 424 402 2000 343 181
-note 131484 "3rd Party Apps: 
-For those 3rd party Apps, when they update add/remove content on storage, they should call MediaScanner to scan the change.
-"
-  xyzwh 456 253 2000 267 87
-relationcanvas 128668 relation_ref 128028 // <dependency>
-  from ref 128156 z 2001 to ref 128284
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
+     "
+  xyzwh 535 44 2000 517 131
+note 130844 "GenericSource: 
+    1) Tracks: AudioTrack, VideoTrack, both created when initFromDataSource()
+    2) Sources: MediaSource from audioTrack & video Track."
+  xyzwh 495 207 2000 463 67
+classcanvas 130972 class_ref 178332 // ABuffer
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 113 655 2000
 end
-relationcanvas 128796 relation_ref 128156 // <dependency>
+classcanvas 131100 class_ref 185116 // MediaBuffer
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 210 540 2000
+end
+classcanvas 131356 class_ref 185372 // GraphicBuffer
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 305 655 2000
+end
+note 131612 "MediaBuffer: 
+1)  from ABuffer   
+2)  from GraphicBuffer   
+3)  from RawData   "
+  xyzwh 325 517 2000 291 107
+relationcanvas 128668 relation_ref 173212 // <aggregation>
   from ref 128028 z 2001 to ref 128284
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 128924 relation_ref 128284 // <dependency>
-  from ref 128540 z 2001 to ref 128412
+relationcanvas 128796 relation_ref 173340 // <aggregation>
+  from ref 128028 z 2001 to ref 128412
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129180 relation_ref 128412 // <dependency>
-  from ref 128412 z 2001 to ref 129052
+relationcanvas 128924 relation_ref 173468 // <composition>
+  from ref 128156 z 2001 to ref 128028
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129692 relation_ref 128540 // <dependency>
-  from ref 128284 z 2001 to ref 129308
+relationcanvas 129052 relation_ref 173596 // <generalisation>
+  from ref 128412 z 2001 to ref 128284
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129820 relation_ref 128668 // <dependency>
-  from ref 128284 z 2001 to ref 129564
+relationcanvas 130460 relation_ref 135964 // <generalisation>
+  from ref 130332 z 2001 to ref 128284
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 129948 relation_ref 128796 // <dependency>
-  from ref 128284 z 2001 to ref 129436
+relationcanvas 131228 relation_ref 173980 // <composition>
+  from ref 131100 z 2001 to ref 130972
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 130076 relation_ref 128924 // <dependency>
-  from ref 129308 z 2001 to ref 129564
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 130204 relation_ref 129052 // <dependency>
-  from ref 129308 z 2001 to ref 129436
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 130332 relation_ref 129180 // <dependency>
-  from ref 129436 z 2001 to ref 128028
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 130460 relation_ref 129308 // <dependency>
-  from ref 129052 z 2001 to ref 128028
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 130588 relation_ref 129436 // <dependency>
-  from ref 129436 z 2001 to ref 129052
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 130844 relation_ref 129564 // <dependency>
-  from ref 129308 z 2001 to ref 130716
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 131100 relation_ref 129692 // <dependency>
-  decenter_begin 493
-  decenter_end 481
-  from ref 130716 z 2001 to ref 130972
+relationcanvas 131484 relation_ref 173852 // <composition>
+  from ref 131100 z 2001 to ref 131356
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end

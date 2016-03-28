@@ -39,9 +39,9 @@ note 131484 "NuPlayerDriver(in binder Thread)
 note 131612 "Each Object represents a Binder/Looper Thread"
   xyzwh 71 10 2000 315 51
 note 131868 "Audio"
-  color white  xyzwh 296 250 0 175 193
+  color white  xyzwh 296 250 2000 175 193
 note 131996 "Video"
-  color white  xyzwh 25 251 0 163 249
+  color white  xyzwh 24 251 2000 163 249
 classinstancecanvas 132124 classinstance_ref 135708 // 
   xyz 349 404 2000 color magenta
 end

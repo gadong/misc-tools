@@ -10,6 +10,56 @@ Client App:
 	1) setDataSource, (file://..... ) -> (fd), MediaPlayer.java
 
 MPS Binder: 
-	2) setDataSource: "
-  xyzwh 18 128 2000 881 517
+	2) setDataSource: 
+
+
+Client App < - > MPS
+        1) URI/fd
+
+Generic Source < - >  NuPlayer Decoder
+        1) ABuffer, wrapped in AccessUnit, dequeueAccessUnit(), drive read from MediaSource
+        2) AnotherPacketSrouce, a buffer for asynchronized read request, buffer the read data, and where the Decoder to get data
+        3) ABuffer are allocated here!!
+
+NuPlayer Decoder < - > NuPlayer Render
+        1) ABuffer to Render's Audio Buffer Queue
+        2) After write to Sink, then notify Decoder
+
+NuPlayer Decoder < - > SurfaceFlinger
+        1) GraphicBuffer
+
+NuPlayer Render < - > AudioFlinger
+        1) AudioTrack"
+  xyzwh 406 13 2000 721 509
+note 128284 "DataSource
+        1) Specific Extractors register their Sniffers to DataSource
+        2) DataSource::siniff() determin mime  type of the file by using those registered Sniffers
+
+MediaExtractor
+        1)  hard coded maps from mime type to specific Extractor, and create specific Extractor
+
+MP3Extractor
+        1)  create Mp3Source
+
+MP3Source
+        1)  read data from DataSource     
+
+MediaCodecList
+         1)  map mime type to specific Component     
+         2)  the instance of media_codec.xml 
+
+OMXMaster
+         1)   managed OMXPlugins 
+         2)   map Compoent to OMXPlugin   
+
+OMXPlugin
+         1)   make specific  component          
+
+SoftOMXComponent
+         2) 
+
+
+
+"
+  xyzwh 14 125 2000 381 397
 end

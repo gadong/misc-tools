@@ -1,0 +1,409 @@
+format 75
+
+classinstance 128028 class_ref 128668 // NuPlayer
+  name ""   xyz 35.7 5.2 2000 life_line_z 2000
+classinstance 128156 class_ref 128924 // NuPlayer::Decoder
+  name ""   xyz 110.8 5.2 2000 life_line_z 2000
+classinstance 128284 class_ref 129180 // MediaCodec
+  name ""   xyz 238.6 4.5 2000 life_line_z 2000
+classinstance 128412 class_ref 129308 // ACodec
+  name ""   xyz 349.4 4.5 2000 life_line_z 2000
+classinstance 131996 class_ref 143132 // OMX
+  name ""   xyz 560 5 2000 life_line_z 2000
+classinstance 132636 class_ref 143260 // CodecObserver
+  name ""   xyz 431.1 4.5 2000 life_line_z 2000
+classinstance 133020 class_ref 136604 // OMXNodeInstance
+  name ""   xyz 626.1 5.2 2000 life_line_z 2000
+classinstance 133404 class_ref 143388 // OMXMaster
+  name ""   xyz 749.4 5.2 2000 life_line_z 2000
+classinstance 133532 class_ref 143516 // SoftOMXPlugin
+  name ""   xyz 835.8 5.2 2000 life_line_z 2000
+classinstance 133916 class_ref 143644 // SoftOMXComponent
+  name ""   xyz 937.4 5.2 2000 life_line_z 2000
+note 140060 "ACodec Init:
+1) Allocate Component
+2) Configure Component
+3) Allocate Buffers
+
+ACodec Loop:
+"
+  xyzwh 475 83 2005 311 139
+durationcanvas 128540 classinstance_ref 128028 // :NuPlayer
+  color red
+  xyzwh 62 60 2010 11 1009
+end
+durationcanvas 128668 classinstance_ref 128156 // :NuPlayer::Decoder
+  color red
+  xyzwh 163 55 2010 11 26
+end
+durationcanvas 128924 classinstance_ref 128156 // :NuPlayer::Decoder
+  color red
+  xyzwh 163 91 2010 11 25
+end
+durationcanvas 129180 classinstance_ref 128156 // :NuPlayer::Decoder
+  color red
+  xyzwh 163 123 2010 11 935
+  overlappingdurationcanvas 129436
+    color blue
+    xyzwh 169 137 2020 11 915
+    overlappingdurationcanvas 129692
+      color blue
+      xyzwh 175 173 2030 11 873
+    end
+  end
+end
+durationcanvas 129948 classinstance_ref 128284 // :MediaCodec
+  color blue
+  xyzwh 274 207 2010 11 151
+  overlappingdurationcanvas 130716
+    color blue
+    xyzwh 280 213 2020 11 136
+    overlappingdurationcanvas 131228
+      color magenta
+      xyzwh 286 266 2030 11 74
+    end
+  end
+end
+durationcanvas 130204 classinstance_ref 128284 // :MediaCodec
+  color blue
+  xyzwh 274 656 2010 11 90
+  overlappingdurationcanvas 135964
+    color magenta
+    xyzwh 280 678 2020 11 44
+  end
+end
+durationcanvas 130460 classinstance_ref 128284 // :MediaCodec
+  color blue
+  xyzwh 274 897 2010 11 148
+  overlappingdurationcanvas 137500
+    color magenta
+    xyzwh 280 917 2020 11 118
+  end
+end
+durationcanvas 130972 classinstance_ref 128412 // :ACodec
+  color blue
+  xyzwh 372 233 2010 11 27
+end
+durationcanvas 131484 classinstance_ref 128412 // :ACodec
+  color magenta
+  xyzwh 372 299 2010 11 338
+  overlappingdurationcanvas 131740
+    color lightorange
+    xyzwh 378 319 2020 11 311
+    overlappingdurationcanvas 132124
+      color lightorange
+      xyzwh 384 341 2030 11 280
+    end
+  end
+end
+durationcanvas 132380 classinstance_ref 131996 // :OMX
+  color mediumyellow
+  xyzwh 579 417 2010 11 109
+end
+durationcanvas 132764 classinstance_ref 132636 // :CodecObserver
+  color lightorange
+  xyzwh 476 372 2010 11 30
+end
+durationcanvas 133148 classinstance_ref 133020 // :OMXNodeInstance
+  color mediumyellow
+  xyzwh 679 437 2010 11 83
+end
+durationcanvas 133660 classinstance_ref 133404 // :OMXMaster
+  color mediumyellow
+  xyzwh 782 448 2010 11 66
+end
+durationcanvas 134044 classinstance_ref 133532 // :SoftOMXPlugin
+  color mediumyellow
+  xyzwh 877 473 2010 11 48
+end
+durationcanvas 134300 classinstance_ref 133916 // :SoftOMXComponent
+  color mediumyellow
+  xyzwh 994 489 2010 11 24
+end
+durationcanvas 134812 classinstance_ref 131996 // :OMX
+  color mediumyellow
+  xyzwh 579 552 2010 11 63
+end
+durationcanvas 135068 classinstance_ref 133020 // :OMXNodeInstance
+  color mediumyellow
+  xyzwh 679 568 2010 11 32
+end
+durationcanvas 135708 classinstance_ref 133916 // :SoftOMXComponent
+  color mediumyellow
+  xyzwh 994 584 2010 11 27
+end
+durationcanvas 136220 classinstance_ref 128412 // :ACodec
+  color magenta
+  xyzwh 372 704 2010 11 165
+  overlappingdurationcanvas 136476
+    color lightorange
+    xyzwh 378 730 2020 11 133
+    overlappingdurationcanvas 136732
+      color lightorange
+      xyzwh 384 749 2030 11 96
+      overlappingdurationcanvas 136988
+	color lightorange
+	xyzwh 390 773 2040 11 59
+      end
+    end
+  end
+end
+durationcanvas 137244 classinstance_ref 131996 // :OMX
+  color mediumyellow
+  xyzwh 579 798 2010 11 25
+end
+durationcanvas 137756 classinstance_ref 128412 // :ACodec
+  color magenta
+  xyzwh 372 934 2010 11 90
+  overlappingdurationcanvas 138012
+    color lightorange
+    xyzwh 378 953 2020 11 58
+  end
+end
+durationcanvas 138268 classinstance_ref 131996 // :OMX
+  color mediumyellow
+  xyzwh 579 973 2010 11 31
+end
+durationcanvas 138908 classinstance_ref 131996 // :OMX
+  color mediumyellow
+  xyzwh 579 1104 2010 11 47
+end
+durationcanvas 139036 classinstance_ref 128412 // :ACodec
+  color lightorange
+  xyzwh 372 1107 2010 11 127
+  overlappingdurationcanvas 139292
+    color lightorange
+    xyzwh 378 1136 2020 11 89
+    overlappingdurationcanvas 139548
+      color lightorange
+      xyzwh 384 1154 2030 11 25
+    end
+    overlappingdurationcanvas 139804
+      color lightorange
+      xyzwh 384 1186 2030 11 25
+    end
+  end
+end
+msg 128796 synchronous
+  from durationcanvas_ref 128540
+  to durationcanvas_ref 128668
+  yz 61 2015 explicitmsg "<<create>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 85 45
+msg 129052 synchronous
+  from durationcanvas_ref 128540
+  to durationcanvas_ref 128924
+  yz 95 2015 explicitmsg "init()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 104 78
+msg 129308 synchronous
+  from durationcanvas_ref 128540
+  to durationcanvas_ref 129180
+  yz 130 2015 explicitmsg "configure()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 86 114
+reflexivemsg 129564 asynchronous
+  to durationcanvas_ref 129436
+  yz 137 2025 explicitmsg "kWhatConfigure"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 180 121
+reflexivemsg 129820 synchronous
+  to durationcanvas_ref 129692
+  yz 173 2035 explicitmsg "onConfigure()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 205 165
+msg 130076 synchronous
+  from durationcanvas_ref 129692
+  to durationcanvas_ref 129948
+  yz 215 2040 explicitmsg "CreateByType()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 185 198
+msg 130332 synchronous
+  from durationcanvas_ref 129692
+  to durationcanvas_ref 130204
+  yz 665 2035 explicitmsg "configure()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 198 648
+msg 130588 synchronous
+  from durationcanvas_ref 129692
+  to durationcanvas_ref 130460
+  yz 898 2035 explicitmsg "start()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 212 882
+reflexivemsg 130844 synchronous
+  to durationcanvas_ref 130716
+  yz 213 2025 explicitmsg "init()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 285 200
+msg 131100 synchronous
+  from durationcanvas_ref 130716
+  to durationcanvas_ref 130972
+  yz 234 2030 explicitmsg "<<create>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 299 219
+reflexivemsg 131356 asynchronous
+  to durationcanvas_ref 131228
+  yz 270 2035 explicitmsg "kWhatInit"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 299 255
+msg 131612 synchronous
+  from durationcanvas_ref 131228
+  to durationcanvas_ref 131484
+  yz 301 2040 explicitmsg "initiateAllocateComponent()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 299 283
+reflexivemsg 131868 asynchronous
+  to durationcanvas_ref 131740
+  yz 322 2025 explicitmsg "kWhatAllocateComponent"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 390 307
+reflexivemsg 132252 synchronous
+  to durationcanvas_ref 132124
+  yz 341 2035 explicitmsg "onAllocateComponent()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 417 336
+msg 132508 asynchronous
+  from durationcanvas_ref 132124
+  to durationcanvas_ref 132380
+  yz 424 2040 explicitmsg "allocateNode()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 405 407
+msg 132892 synchronous
+  from durationcanvas_ref 132124
+  to durationcanvas_ref 132764
+  yz 378 2035 explicitmsg "<<create>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 410 363
+msg 133276 synchronous
+  from durationcanvas_ref 132380
+  to durationcanvas_ref 133148
+  yz 441 2015 explicitmsg "<<create>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 604 424
+msg 133788 synchronous
+  from durationcanvas_ref 133148
+  to durationcanvas_ref 133660
+  yz 456 2015 explicitmsg "makeComponentInstance()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 697 437
+msg 134172 synchronous
+  from durationcanvas_ref 133660
+  to durationcanvas_ref 134044
+  yz 481 3005 explicitmsg "makeComponentInstance()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 799 461
+msg 134428 synchronous
+  from durationcanvas_ref 134044
+  to durationcanvas_ref 134300
+  yz 496 3010 explicitmsg "<<create>>"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 908 480
+msg 134556 return
+  from durationcanvas_ref 132380
+  to durationcanvas_ref 132124
+  yz 504 2035 unspecifiedmsg
+  show_full_operations_definition default drawing_language default show_context_mode default
+msg 134684 return
+  from durationcanvas_ref 131484
+  to durationcanvas_ref 131228
+  yz 327 3005 unspecifiedmsg
+  show_full_operations_definition default drawing_language default show_context_mode default
+msg 134940 asynchronous
+  from durationcanvas_ref 132124
+  to durationcanvas_ref 134812
+  yz 553 2040 explicitmsg "OMX_CommandStateSet"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 418 536
+msg 135196 synchronous
+  from durationcanvas_ref 134812
+  to durationcanvas_ref 135068
+  yz 572 2015 explicitmsg "sendCommand()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 596 554
+msg 135324 return
+  from durationcanvas_ref 134812
+  to durationcanvas_ref 132124
+  yz 599 2015 unspecifiedmsg
+  show_full_operations_definition default drawing_language default show_context_mode default
+msg 135836 synchronous
+  from durationcanvas_ref 135068
+  to durationcanvas_ref 135708
+  yz 585 2015 explicitmsg "sendCommand()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 794 569
+reflexivemsg 136092 asynchronous
+  to durationcanvas_ref 135964
+  yz 679 2025 explicitmsg "kWhatConfigure"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 287 663
+msg 136348 synchronous
+  from durationcanvas_ref 135964
+  to durationcanvas_ref 136220
+  yz 704 2030 explicitmsg "initiateConfigureComponent()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 302 693
+reflexivemsg 136604 asynchronous
+  to durationcanvas_ref 136476
+  yz 731 3005 explicitmsg "kWhatConfigureComponent"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 390 717
+reflexivemsg 136860 synchronous
+  to durationcanvas_ref 136732
+  yz 749 3010 explicitmsg "onConfigureComponent()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 410 737
+reflexivemsg 137116 synchronous
+  to durationcanvas_ref 136988
+  yz 773 2045 explicitmsg "configureCodec()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 430 760
+msg 137372 asynchronous
+  from durationcanvas_ref 136988
+  to durationcanvas_ref 137244
+  yz 798 2050 explicitmsg "...video/audio configure"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 427 783
+reflexivemsg 137628 asynchronous
+  to durationcanvas_ref 137500
+  yz 917 2025 explicitmsg "kWhatStart"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 294 902
+msg 137884 synchronous
+  from durationcanvas_ref 137500
+  to durationcanvas_ref 137756
+  yz 935 2030 explicitmsg "initiateStart()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 319 921
+reflexivemsg 138140 asynchronous
+  to durationcanvas_ref 138012
+  yz 954 3005 explicitmsg "kWhatStart"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 387 938
+msg 138396 asynchronous
+  from durationcanvas_ref 138012
+  to durationcanvas_ref 138268
+  yz 973 3010 explicitmsg "OMX_CommandStateSet"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 432 961
+msg 139164 asynchronous
+  from durationcanvas_ref 138908
+  to durationcanvas_ref 139036
+  yz 1111 2015 explicitmsg "OMX_EventCmdComplete"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 410 1096
+reflexivemsg 139420 synchronous
+  to durationcanvas_ref 139292
+  yz 1136 2025 explicitmsg "mExecutingState->resume()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 407 1128
+reflexivemsg 139676 synchronous
+  to durationcanvas_ref 139548
+  yz 1154 2035 explicitmsg "submitOutputBuffers()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 421 1150
+reflexivemsg 139932 synchronous
+  to durationcanvas_ref 139804
+  yz 1186 2035 explicitmsg "postFillThisBuffer()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 425 1181
+end

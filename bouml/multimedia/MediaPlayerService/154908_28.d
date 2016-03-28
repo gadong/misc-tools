@@ -303,14 +303,13 @@ reflexivemsg 141468 synchronous
 msg 141724 synchronous
   from durationcanvas_ref 141340
   to durationcanvas_ref 141596
-  yz 848 2025 explicitmsg "releaseOutputBuffer()"
+  yz 848 2025 unspecifiedmsg
   show_full_operations_definition default drawing_language default show_context_mode default
-  label_xy 273 833
 reflexivemsg 141980 asynchronous
   to durationcanvas_ref 141852
   yz 861 2025 explicitmsg "kWhatReleaseOutputBuffer"
   show_full_operations_definition default drawing_language default show_context_mode default
-  label_xy 443 845
+  label_xy 436 844
 reflexivemsg 142236 synchronous
   to durationcanvas_ref 142108
   yz 883 2035 explicitmsg "onReleaseOutputBuffer"

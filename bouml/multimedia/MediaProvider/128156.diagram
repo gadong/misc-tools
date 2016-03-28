@@ -1,46 +1,46 @@
-format 74
+format 75
 
 classinstance 128028 class_ref 128284 // MtpReceiver
-  name ""   xyz 88.6 4.4 2000 life_line_z 2000
+  name ""   xyz 89.4 4.8 2000 life_line_z 2000
 classinstance 128156 class_ref 128412 // MtpService
-  name ""   xyz 301.9 4.4 2000 life_line_z 2000
+  name ""   xyz 302.5 4.8 2000 life_line_z 2000
 classinstance 128284 class_ref 128156 // MediaProvider
-  name ""   xyz 188.8 4.4 2000 life_line_z 2000
+  name ""   xyz 188.6 4.8 2000 life_line_z 2000
 classinstance 128412 class_ref 128924 // MtpServer
-  name ""   xyz 406 4.4 2000 life_line_z 2000
+  name ""   xyz 406 4.8 2000 life_line_z 2000
 classinstance 128540 class_ref 129052 // MtpDatabase
-  name ""   xyz 496.3 4.4 2000 life_line_z 2000
+  name ""   xyz 496.1 4.8 2000 life_line_z 2000
 note 130460 "MtpProvider->MtpService
     1, sendObjectAdded
     2, sendObjectRemoved"
-  xyzwh 142.9 298.4 2000 171 69
+  xyzwh 142.3 298.8 2000 171 69
 classinstance 131100 class_ref 129180 // MtpStorage
-  name ""   xyz 598.9 4.4 2000 life_line_z 2000
+  name ""   xyz 598.1 4.8 2000 life_line_z 2000
 note 132508 "run: 
     1, read Request
     2, handle Request
     3, write response"
-  xyzwh 477.8 300.4 2005 135 85
+  xyzwh 477.6 300.8 2005 135 85
 note 132636 "Threads: 
-1, UI Main Thread
-2, MtpMsgHandlerThread
-3, MtpServer"
-  xyzwh 474.6 429.4 2000 173 81
+        1, UI Main Thread
+        2, MtpMsgHandlerThread
+        3, MtpServer"
+  xyzwh 475.6 428.2 2000 194 81
 durationcanvas 128796 classinstance_ref 128028 // :MtpReceiver
   color gold
-  xyzwh 123 55.4 2010 11 386
+  xyzwh 124 55.4 2010 11 386
 end
 durationcanvas 128924 classinstance_ref 128156 // :MtpService
   color mediumyellow
-  xyzwh 332 56.6 2010 11 295
+  xyzwh 332 55.8 2010 11 297
   overlappingdurationcanvas 129180
     color magenta
-    xyzwh 338 64.8 2020 11 281
+    xyzwh 338 54.8 2020 11 290
   end
 end
 durationcanvas 129436 classinstance_ref 128284 // :MediaProvider
   color mediumyellow
-  xyzwh 228 387.4 2010 11 51
+  xyzwh 229 387.4 2010 11 51
 end
 durationcanvas 129692 classinstance_ref 128156 // :MtpService
   color mediumyellow
@@ -48,23 +48,23 @@ durationcanvas 129692 classinstance_ref 128156 // :MtpService
 end
 durationcanvas 129948 classinstance_ref 128412 // :MtpServer
   color magenta
-  xyzwh 434 116.6 2010 11 34
+  xyzwh 435 116.4 2010 11 34
 end
 durationcanvas 130204 classinstance_ref 128540 // :MtpDatabase
   color magenta
-  xyzwh 533 84.6 2010 11 39
+  xyzwh 534 84.6 2010 11 39
 end
 durationcanvas 130588 classinstance_ref 128540 // :MtpDatabase
   color magenta
-  xyzwh 533 170.8 2010 11 29
+  xyzwh 534 170.8 2010 11 29
 end
 durationcanvas 131228 classinstance_ref 131100 // :MtpStorage
   color magenta
-  xyzwh 631 197.6 2010 11 32
+  xyzwh 631 197.4 2010 11 32
 end
 durationcanvas 131484 classinstance_ref 128540 // :MtpDatabase
   color magenta
-  xyzwh 533 234.4 2010 11 28
+  xyzwh 534 234.4 2010 11 28
 end
 durationcanvas 131740 classinstance_ref 128412 // :MtpServer
   color magenta
@@ -72,10 +72,10 @@ durationcanvas 131740 classinstance_ref 128412 // :MtpServer
 end
 durationcanvas 131996 classinstance_ref 128412 // :MtpServer
   color magenta
-  xyzwh 434 320.6 2010 11 47
+  xyzwh 435 280.6 2010 11 86
   overlappingdurationcanvas 132252
     color mediumgreen
-    xyzwh 440 336.6 2020 11 25
+    xyzwh 441 281.6 2020 11 80
   end
 end
 msg 129052 asynchronous
