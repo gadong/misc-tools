@@ -63,8 +63,14 @@ end
 note 135068 "MixerThread(fast Mixer)
         1) NormalMixer output data to pipe sink
         2) FastMixer get data from pipe source
-        3) FastMixer write data to HAL Sink(AudioStreamOutSink)"
-  xyzwh 43 529 2000 359 81
+        3) FastMixer write data to HAL Sink(AudioStreamOutSink)
+
+Normal Mixer & Fast Mixer
+        1, Normal Mixer writes its SinkBuffer to PipeSink
+        2, Faster Mixer gets data from PipeReader(connect to PipeSink)
+        3, Faster Mixer writes its data to HAL Sink(AudioStreamOutSink)
+"
+  xyzwh 44 530 2000 461 159
 relationcanvas 129180 relation_ref 128284 // <generalisation>
   from ref 128284 z 2001 to ref 128412
   no_role_a no_role_b

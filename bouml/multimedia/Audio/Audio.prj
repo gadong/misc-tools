@@ -1,6 +1,6 @@
 format 75
 "Audio"
-  revision 8
+  revision 9
   modified_by 28 ""
 
 
@@ -74,69 +74,6 @@ format 75
       size A3
     end
 
-    classinstance 128028 ""
-      type class_ref 143644 // Track
-      attributes
-        end
-      relations
-        end
-    end
-
-    classinstance 128156 ""
-      type class_ref 143644 // Track
-      attributes
-        end
-      relations
-        end
-    end
-
-    classinstance 128284 ""
-      type class_ref 143772 // MEMBUFFER
-      attributes
-        end
-      relations
-        end
-    end
-
-    classinstance 128412 ""
-      type class_ref 143772 // MEMBUFFER
-      attributes
-        end
-      relations
-        end
-    end
-
-    classinstance 128540 ""
-      type class_ref 143772 // MEMBUFFER
-      attributes
-        end
-      relations
-        end
-    end
-
-    classinstance 128668 ""
-      type class_ref 143772 // MEMBUFFER
-      attributes
-        end
-      relations
-        end
-    end
-
-    classinstance 128796 ""
-      type class_ref 129564 // MixerThread
-      attributes
-        end
-      relations
-        end
-    end
-
-    classinstance 128924 ""
-      type class_ref 130588 // AudioMixer
-      attributes
-        end
-      relations
-        end
-    end
   end
 
   classview 128156 "media"
