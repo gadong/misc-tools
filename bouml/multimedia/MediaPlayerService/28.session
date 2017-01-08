@@ -5,7 +5,7 @@ diagrams
   classdiagram_ref 141724 // Org: Data Stream
     1103 731 100 3 0 0
   active  sequencediagram_ref 154908 // Seq: loop
-    1384 912 100 3 0 0
+    1384 914 100 3 0 0
   classdiagram_ref 128284 // Class Org: NuPlayer
     1103 729 100 3 0 0
   classdiagram_ref 148252 // Description
@@ -13,7 +13,13 @@ diagrams
   classdiagram_ref 155036 // Org: OMX
     1103 729 100 3 0 0
   objectdiagram_ref 168092 // Object Org:NuPlayer
-    1103 729 100 3 0 0
+    1384 914 100 3 0 0
+  sequencediagram_ref 128028 // Seq: setDataSource
+    1104 632 105 3 0 0
+  sequencediagram_ref 128156 // Seq: prepare & start
+    1104 632 105 3 0 0
+  sequencediagram_ref 135196 // Seq: NuPlayer::instantiateDecoder
+    1384 914 100 3 0 0
 end
 show_stereotypes
 selected sequencediagram_ref 154908 // Seq: loop

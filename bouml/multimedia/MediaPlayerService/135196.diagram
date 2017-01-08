@@ -45,7 +45,7 @@ durationcanvas 129180 classinstance_ref 128156 // :NuPlayer::Decoder
   xyzwh 163 123 2010 11 935
   overlappingdurationcanvas 129436
     color blue
-    xyzwh 169 137 2020 11 915
+    xyzwh 169 144 2020 11 908
     overlappingdurationcanvas 129692
       color blue
       xyzwh 175 173 2030 11 873
@@ -204,9 +204,9 @@ msg 129308 synchronous
   label_xy 86 114
 reflexivemsg 129564 asynchronous
   to durationcanvas_ref 129436
-  yz 137 2025 explicitmsg "kWhatConfigure"
+  yz 144 2025 explicitmsg "kWhatConfigure"
   show_full_operations_definition default drawing_language default show_context_mode default
-  label_xy 180 121
+  label_xy 180 127
 reflexivemsg 129820 synchronous
   to durationcanvas_ref 129692
   yz 173 2035 explicitmsg "onConfigure()"

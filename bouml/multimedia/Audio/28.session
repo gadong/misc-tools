@@ -1,4 +1,8 @@
 window_sizes 1680 988 337 1007 877 35
+diagrams
+  active  classdiagram_ref 134556 // AudioTrack
+    1065 703 100 3 0 0
+end
 show_stereotypes
 selected classdiagram_ref 134556 // AudioTrack
 open
